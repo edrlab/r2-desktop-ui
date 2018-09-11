@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+  <body>
+
+
+    <!-- doit être utilisé pour signifier la barre de menu. Attention : une seule par page -->
+    <header role="banner"> </header>
+
+    <!-- doit être utilisé pour signifier un formulaire de recherche. Attention : une seule par page -->
+    <form role="search"> </form>
+
+    <!-- doit être utilisé pour signifier la zone de contenu principal de la page. Attention : une seule par page -->
+    <main role="main"> </main>
+
+    <!-- doit être utilisé pour signifier la zone de footer avec copyrights, mentions légales, crédits. Attention : une seule par page -->
+    <footer role="contentinfo"> </footer>
+
+    <!-- doit être utilisé pour signifier les menus de navigations. Attention : une seule par page, et seulement des liens vers des pages internes au site. Utiliser <ul> et <li> dedans comme d'hab -->
+    <nav role="navigation" aria-label="Menu principal">[…]</nav>
+    <nav role="navigation" aria-label="Menu secondaire">[…]</nav>
+
+
+    <p role="heading" aria-level="1">Titre de niveau 1</p> 
+    <!-- est sémantiquement équivalent à -->
+    <h1>Titre de niveau 1</h1>
+
+    <title> </title>
+    <!-- Doit contenir au mini le nom de la page courante et du site. Si il y a eu une recherche, changer le title pour le suivant -->
+    <title>Résultats de votre recherche sur "[Expression recherchée]" (page 3/7) | [Nom du site]</title>
+    <title>Confirmation - Contact | [Nom du site]</title>
+
+    <!-- doit être utilisé pour signifier que j'utilise de l'anglais -->
+    <a href="…" lang="en" hreflang="en">English version</a>
+
+    <!-- bien différencier, leur donner des noms explicites -->
+    <button>Soumettre des informations, afficher l’élément suivant ou précédent dans un carrousel, fermer une fenêtre modale</button> 
+    <a>Naviguer</a>
+
+    <!-- Si les liens ne sont pas explicites -->
+    <a href="…" aria-label="Titre de mon article (Lire la suite)">
+      Lire la suite
+    </a>
+    <!-- ou -->
+    <a href="…" title="Titre de mon article (Lire la suite)">
+      Lire la suite
+    </a>
+
+
+    <!-- Expliciter les liens ou inputs dont les values sont les mêmes -->
+    <input type="submit" value="Rechercher" aria-label="Rechercher une actualité"/>
+    <input type="submit" value="Rechercher" aria-label="Rechercher une personne dans l'annuaire" />
+
+
+    <!-- En cas de liens vers téléchargements, préciser titre, format, poids -->
+    <a href="plan-reseau-bus-lyon.pdf">
+      Télécharger le plan du réseau de bus de Lyon (PDF - 2 Mo)
+    </a>
+
+    <!-- Si un lien ouvre une nouvelle fenêtre, l'écrire -->
+    <a href="cgv.html" target="_blank" aria-label="Conditions Générales de Vente (nouvelle fenêtre)">
+     Conditions Générales de Vente
+    </a>
+
+
+    <!-- Dans le cas d'icônes illustratives ou décoratives -->
+    <span class="icone erreur" aria-hidden="true"></span>
+
+    <!-- Si une icône image est importante, donne une info, écrire dans le HTML un <span> avec la description associée. Puis avec le CSS le cacher loin du viewport en absolute + mettre en title la description dans la balise d'icone -->
+
+
+    <!-- Dans le cas d'un SVG informatif -->
+    <a>
+      Conditions Générales de Vente
+      <svg>
+        <text opacity="0">(nouvelle fenêtre)</text>
+        <g aria-hidden="true">
+          <path aria-hidden="true">
+          </path>
+        </g>
+      </svg>
+    </a>
+
+    <!-- Dans le cas d'un SVG qui est un lien tout seul -->
+    <div>
+      <svg role="link">
+        <a>
+          <text opacity="0">Accueil</text>
+        </a>
+        <g aria-hidden="true">
+          <path aria-hidden="true">
+          </path>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Images décoratives / inutiles -->
+    <img src="erreur.png" alt="" />
+
+    <!-- Images utiles -->
+    <img src="nouvelle-fenetre.png" alt="(nouvelle fenêtre)" />
+
+    <!-- Images-liens -->
+    <a href="/">
+      <img src="accueil.png" alt="Accueil" />
+    </a>
+
+    <!-- Images-boutons (submit en loupe par exemple) -->
+    <input type="image" src="loupe.png" alt="Lancer la recherche" />
+
+    <!-- Légendes d'images -->
+    <figure role="group">
+      <img src="…" alt="Trois lamas dans le désert en Bolivie." />
+      <figcaption>
+        Désert en Bolivie, prise de vue par Audesou en février 2013.
+      </figcaption>
+      Page 29/56
+    </figure>
+
+    <!-- Attention : interdit d'utiliser css pour afficher images importantes -->
+
+    <!-- Pour les inputs, toujours utiliser labels. Attention, ne pas utiliser ni title, ni aria label. Intégrer DANS label les aides à la saisie (jj/mm/aaaa par ex, ou poids de l'image à envoyer, etc.) -->
+    <label for="nom">Votre nom</label>
+    <input type="text" id="nom" name="nom" />
+
+    <!-- Si le champ n'a pas d'intitulé lisible, utiliser aria label -->
+    <input type="search" aria-label="Votre recherche" name="recherche" />
+    <input type="submit" value="Rechercher" />
+
+    <!-- Si il y a une erreur dans un champ après envoi, attribuer aria invalid au input -->
+    <input type="text" id="nom" name="nom" required aria-invalid="true" />
+
+
+    <!-- Si utilisation de cases à cocher -->
+    <fieldset>
+      <legend>
+        Sports pratiqués
+      </legend>
+      <ul>
+        <li>
+          <input type="checkbox" id="basket" />
+          <label for="basket">Basket</label>
+        </li>
+        <li>
+          <input type="checkbox" id="tennis" />
+          <label for="tennis">Tennis</label>
+        </li>
+      </ul>
+    </fieldset>
+
+
+    <!-- Pour les listes de descriptions -->
+    <h2>Conférence sur l'accessibilité web</h2>
+    <dl>
+      <dt>Lieu</dt>
+      <dd>Paris</dd>
+      <dt>Dates</dt>
+      <dd>Samedi 7 septembre</dd>
+      <dd>Mercredi 14 octobre</dd>
+      <dt>Heure</dt>
+      <dd>À partir de 10 heures</dd>
+    </dl>
+
+
+    <!-- Derrière les images css, mettre un fond de couleur -->
+
+    <!-- Quand un lien est grisé car actif, penser à faire apparaître un indicateur (même s'il est planqué hors écran), pour qu'on comprenne. Ou alors retirer le lien <a>. -->
+    <a href="">
+     Investisseurs
+     <span class="hors-ecran">(rubrique courante)</span>
+    </a>
+
+    <!-- Utiliser seulement  em, %, rem pour les font-size -->
+
+    <!-- Ne pas empêcher le zoon -->
+    <meta content="width=device-width;initial-scale=1.0 ; maximum-scale=1.0 ; user-scalable=1 ;" name="viewport" />
+
+
+    <!-- Sur toutes les pages, le tout premier lien doit être en lien vers le contenu -->
+    
+    <a class="evitement" href="#contenu">Aller au contenu</a>
+    
+    <main role="main">
+      <a id="contenu" tabindex="-1"> </a>
+    </main>
+
+    <style>
+      a.evitement {
+      display : inline-block ;
+      color : #555 ;
+      background : #fff ;
+      padding : .5em ;
+      position : absolute ;
+      left : -99999px ;
+      z-index : 100 ;
+    }
+    
+    a.evitement:focus {
+      left: 0;
+    }
+
+    </style>
+
+
+
+
+    <!-- Doubler les hover par des focus -->
+    <style>
+      main a:hover,
+      main a:focus {
+       text-decoration: none;
+      }
+    </style>
+
+    
+
+
+
+
+
+  </body>
+
+
+
+
+
+</html>
