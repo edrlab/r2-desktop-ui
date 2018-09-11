@@ -2,7 +2,8 @@
 
     .slider {
         position: relative;
-        width: 100%;
+        height: 100%;
+        min-width: 600px;
     }
 
     .slick-slide {
@@ -10,13 +11,15 @@
     }
 
     .slick-slide img {
-      width: 100%;
+        position: relative;
+        width:100%;
+        top:0;
+
     }
 
     .slick-prev:before,
     .slick-next:before {
       color: black;
-      background-color: red;
     }
 
 
@@ -120,7 +123,7 @@
 .slick-initialized .slick-slide
 {
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: top;
 }
 .slick-loading .slick-slide
 {
@@ -191,12 +194,11 @@
 .slick-prev:before,
 .slick-next:before
 {
-    font-family: 'slick';
     font-size: 20px;
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -302,7 +304,6 @@
 }
 .slick-dots li button:before
 {
-    font-family: 'slick';
     font-size: 6px;
     line-height: 20px;
 

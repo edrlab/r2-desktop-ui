@@ -24,8 +24,14 @@
   <body>
 
 
+
+
       <!-- Sur toutes les pages, le tout premier lien doit être en lien vers le contenu -->
       <a class="evitement" href="#contenu">Aller au contenu</a>
+
+
+
+
 
 
       <!-- Menu principal -->
@@ -36,6 +42,10 @@
           <li class="preferences">Préférences</li>
         </ul>
       </nav>
+
+
+
+
 
       <!-- Menu secondaire -->
       <nav class="nav_secondaire" role="navigation" aria-label="Menu secondaire">
@@ -61,55 +71,362 @@
             </g>
           </svg>
 
+
+
+          <!-- Formulaire de recherche -->
           <form id="nav_recherche" role="search">
             
             <input type="search" id="menu_recherche" aria-label="Rechercher une type de littérature" placeholder="Rechercher" />
 
             <input type="image" id="lancer" src="img/unsvg.svg" value="" alt="Lancer la recherche" />
-
-
           </form>
 
 
+      </nav> <!-- fin du menu secondaire -->
 
 
-      </nav>
 
 
-
-      <!-- Le contenu principal doit être ici -->
+      <!-- Contenu principal -->
       <main role="main">
         <a id="contenu" tabindex="-1"></a>
+
+
+
+
+      
+
+      <section>
 
         <h1>Reprendre la lecture</h1>
 
 
 
+        <!-- Slider -->
+        <div class="regular slider">
 
-      <section class="regular slider">
-        <div>
-          <img src="img/livre1.jpg" alt="Trois lamas dans le désert en Bolivie.">
-        </div>
-        <div>
-          <img src="img/livre2.jpg">
-        </div>
-        <div>
-          <img src="img/livre3.jpg">
-        </div>
-        <div>
-          <img src="img/livre4.jpg">
-        </div>
-        <div>
-          <img src="img/livre2.jpg">
-        </div>
-        <div>
-          <img src="img/livre3.jpg">
-        </div>
-        <div>
-          <img src="img/livre4.jpg">
-        </div>
-        
+          <!-- Bloc pour un livre -->
+          <div class="bloc_livre">
+            <img src="img/livre1.jpg" alt="Couverture d'Euphoria, par Lily King">
+
+            <div class="legende">
+
+              <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
+              <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+            
+                <svg role="link" class="icon_voirplus">
+                  <a>
+                    <text opacity="0">Plus d'informations sur ce livre</text>
+                  </a>
+                  <g aria-hidden="true">
+                    <rect width="20" height="40"/>
+                  </g>
+                </svg>
+            </div>
+          </div>
+
+
+
+
+
+
+          <!-- Bloc pour un livre -->
+          <div class="bloc_livre">
+            <img src="img/livre2.jpg" alt="Couverture de Bad Teeth, par Dustin Long">
+
+            <div class="legende">
+
+              <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
+              <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+            
+                <svg role="link" class="icon_voirplus">
+                  <a>
+                    <text opacity="0">Plus d'informations sur ce livre</text>
+                  </a>
+                  <g aria-hidden="true">
+                    <rect width="20" height="40"/>
+                  </g>
+                </svg>
+            </div>
+          </div>
+
+
+
+
+
+          <!-- Bloc pour un livre -->
+          <div class="bloc_livre">
+            <img src="img/livre3.jpg" alt="Couverture de Love Does, par Bob Goff">
+
+            <div class="legende">
+
+              <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
+              <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+            
+                <svg role="link" class="icon_voirplus">
+                  <a>
+                    <text opacity="0">Plus d'informations sur ce livre</text>
+                  </a>
+                  <g aria-hidden="true">
+                    <rect width="20" height="40"/>
+                  </g>
+                </svg>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+          <!-- Bloc pour un livre -->
+          <div class="bloc_livre">
+            <img src="img/livre4.jpg" alt="Couverture de Lore, par Aaron Mahnke">
+
+            <div class="legende">
+
+              <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
+              <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+            
+                <svg role="link" class="icon_voirplus">
+                  <a>
+                    <text opacity="0">Plus d'informations sur ce livre</text>
+                  </a>
+                  <g aria-hidden="true">
+                    <rect width="20" height="40"/>
+                  </g>
+                </svg>
+            </div>
+          </div>
+          
+          
+          
+        </div><!-- Fin du slider -->
+
       </section>
+
+
+
+
+
+
+
+      <section>
+
+        <h1>Derniers Ajouts</h1>
+        <p class="voir_plus">Tous mes livres</p> 
+
+
+
+
+        <!-- Slider -->
+        <div class="regular slider">
+
+          <!-- Bloc pour un livre -->
+          <div class="bloc_livre">
+            <img src="img/livre1.jpg" alt="Couverture d'Euphoria, par Lily King">
+
+            <div class="legende">
+
+              <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
+              <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+            
+                <svg role="link" class="icon_voirplus">
+                  <a>
+                    <text opacity="0">Plus d'informations sur ce livre</text>
+                  </a>
+                  <g aria-hidden="true">
+                    <rect width="20" height="40"/>
+                  </g>
+                </svg>
+            </div>
+          </div>
+
+
+
+
+
+
+          <!-- Bloc pour un livre -->
+          <div class="bloc_livre">
+            <img src="img/livre2.jpg" alt="Couverture de Bad Teeth, par Dustin Long">
+
+            <div class="legende">
+
+              <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
+              <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+            
+                <svg role="link" class="icon_voirplus">
+                  <a>
+                    <text opacity="0">Plus d'informations sur ce livre</text>
+                  </a>
+                  <g aria-hidden="true">
+                    <rect width="20" height="40"/>
+                  </g>
+                </svg>
+            </div>
+          </div>
+
+
+
+
+
+          <!-- Bloc pour un livre -->
+          <div class="bloc_livre">
+            <img src="img/livre3.jpg" alt="Couverture de Love Does, par Bob Goff">
+
+            <div class="legende">
+
+              <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
+              <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+            
+                <svg role="link" class="icon_voirplus">
+                  <a>
+                    <text opacity="0">Plus d'informations sur ce livre</text>
+                  </a>
+                  <g aria-hidden="true">
+                    <rect width="20" height="40"/>
+                  </g>
+                </svg>
+            </div>
+          </div>
+
+
+
+
+
+          <!-- Bloc pour un livre -->
+          <div class="bloc_livre">
+            <img src="img/livre4.jpg" alt="Couverture de Lore, par Aaron Mahnke">
+
+            <div class="legende">
+
+              <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
+              <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+            
+                <svg role="link" class="icon_voirplus">
+                  <a>
+                    <text opacity="0">Plus d'informations sur ce livre</text>
+                  </a>
+                  <g aria-hidden="true">
+                    <rect width="20" height="40"/>
+                  </g>
+                </svg>
+            </div>
+          </div>
+
+
+
+
+
+          <!-- Bloc pour un livre -->
+          <div class="bloc_livre">
+            <img src="img/livre3.jpg" alt="Couverture de Love Does, par Bob Goff">
+
+            <div class="legende">
+
+              <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
+              <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+            
+                <svg role="link" class="icon_voirplus">
+                  <a>
+                    <text opacity="0">Plus d'informations sur ce livre</text>
+                  </a>
+                  <g aria-hidden="true">
+                    <rect width="20" height="40"/>
+                  </g>
+                </svg>
+            </div>
+          </div>
+
+
+
+
+
+          <!-- Bloc pour un livre -->
+          <div class="bloc_livre">
+            <img src="img/livre4.jpg" alt="Couverture de Lore, par Aaron Mahnke">
+
+            <div class="legende">
+
+              <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
+              <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+            
+                <svg role="link" class="icon_voirplus">
+                  <a>
+                    <text opacity="0">Plus d'informations sur ce livre</text>
+                  </a>
+                  <g aria-hidden="true">
+                    <rect width="20" height="40"/>
+                  </g>
+                </svg>
+            </div>
+          </div>
+
+
+
+
+
+
+          <!-- Bloc pour un livre -->
+          <div class="bloc_livre">
+            <img src="img/livre3.jpg" alt="Couverture de Love Does, par Bob Goff">
+
+            <div class="legende">
+
+              <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
+              <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+            
+                <svg role="link" class="icon_voirplus">
+                  <a>
+                    <text opacity="0">Plus d'informations sur ce livre</text>
+                  </a>
+                  <g aria-hidden="true">
+                    <rect width="20" height="40"/>
+                  </g>
+                </svg>
+            </div>
+          </div>
+
+
+
+
+
+          <!-- Bloc pour un livre -->
+          <div class="bloc_livre">
+            <img src="img/livre4.jpg" alt="Couverture de Lore, par Aaron Mahnke">
+
+            <div class="legende">
+
+              <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
+              <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+            
+                <svg role="link" class="icon_voirplus">
+                  <a>
+                    <text opacity="0">Plus d'informations sur ce livre</text>
+                  </a>
+                  <g aria-hidden="true">
+                    <rect width="20" height="40"/>
+                  </g>
+                </svg>
+            </div>
+          </div>
+          
+          
+          
+        </div><!-- Fin du slider -->
+
+      </section>
+
+
+
+
+
 
 
 
