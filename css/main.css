@@ -203,5 +203,62 @@ p.auteur_livre {
 	padding:2px 8px 2px 8px;
 }
 
+.voir_plus svg {
+	width: 15px;
+	height:15px;
+	vertical-align: top;
+	margin-top:2px;
+	margin-left:5px;
+}
+
+.meslivres_ajouter { 
+	display: block;
+	position: relative;
+	padding-top:35px;
+	padding-bottom: 20px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.meslivres_ajouter svg {
+	position: relative;
+	width:25px;
+	vertical-align: top;
+	height:25px;
+}
+
+form#tag_recherche {
+	display: inline-block;
+	border-bottom: 1px solid #c1c1c1;
+	margin-left:0;
+	height:35px;
+	margin-bottom:50px;
+	display: none;
+}
+
+input#tag_champs {
+	position: relative;
+	width:300px;
+	border-radius: 0;
+	border:none;
+	height:35px;
+	outline: inherit;
+	background-color: transparent;
+	color:black;
+	font-size: 0.9rem;
+}
+
+input#tag_champs::placeholder {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color:#c1c1c1;
+}
+	
+#tag_recherche #lancer{
+	position: relative;
+	width:35px;
+	vertical-align: top;
+}
+
 
 

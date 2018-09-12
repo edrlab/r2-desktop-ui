@@ -219,7 +219,13 @@
       <section>
 
         <h1>Derniers Ajouts</h1>
-        <p class="voir_plus">Tous mes livres</p> 
+        <p class="voir_plus">Tous mes livres
+          <svg>
+            <g aria-hidden="true">
+              <rect width="15" height="15"/>
+            </g>
+          </svg>
+        </p> 
 
 
 
@@ -420,6 +426,31 @@
           
           
         </div><!-- Fin du slider -->
+
+      </section>
+
+
+      <section>
+
+        <a class="meslivres_ajouter">
+          <svg>
+            <g aria-hidden="true">
+              <rect width="25" height="25"/>
+            </g>
+          </svg>
+          Ajouter une sélection
+        </a>
+
+
+        <!-- Formulaire de recherche -->
+        <form id="tag_recherche" role="search">
+            
+          <input type="search" id="tag_champs" placeholder="Rechercher un tag" />
+
+          <input type="image" id="lancer" src="img/unsvg.svg" value="" alt="Lancer la recherche de tag" />
+        </form>
+
+
 
       </section>
 
