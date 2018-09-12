@@ -13,6 +13,9 @@ $(".meslivres_ajouter").click(function(){
 	if (ajout_selection===0) {
 		$("form#tag_recherche").css("display","inline-block");
 		ajout_selection = 1;
+		$('html, body').animate({
+        	scrollTop: $("#tag_recherche").offset().top
+        }, 500);
 	}
 
 	else{

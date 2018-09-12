@@ -8,6 +8,7 @@
 
     .slick-slide {
       margin: 0px 30px 0px 0px;
+      width:151px;
     }
 
     .slick-slide img {
@@ -27,7 +28,6 @@
 .slick-slider
 {
     position: relative;
-
     display: block;
     box-sizing: border-box;
 
