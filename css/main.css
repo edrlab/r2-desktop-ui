@@ -45,6 +45,11 @@ nav.nav_principal ul {
 	padding-right:60px;
 }
 
+nav.nav_principal ul a {
+	text-decoration: none;
+	color:inherit;
+}
+
 nav.nav_principal ul li {
 	display: inline-block;
 	padding-bottom:18px;
@@ -224,7 +229,6 @@ h1 {
 }
 
 form#tag_recherche {
-	display: inline-block;
 	border-bottom: 1px solid #c1c1c1;
 	margin-left:0;
 	height:35px;
@@ -324,6 +328,58 @@ input#tag_champs::placeholder {
 }
 
 
+/* PAGE CATALOGUES */
+
+
+.flux_ajouter {
+	display: block;
+	position: relative;
+	padding-top:40px;
+	padding-bottom: 10px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.flux_ajouter svg {
+	position: relative;
+	width:25px;
+	vertical-align: top;
+	height:25px;
+}
+
+form#flux_recherche {
+	border-bottom: 1px solid #c1c1c1;
+	margin-left:0;
+	height:35px;
+	margin-bottom:50px;
+	display: inline-block;
+}
+
+.flux_container {
+   	display: flex;
+   	width:100%;
+  	flex-flow: row wrap;
+  	height: auto;
+  	justify-content: space-between;
+
+
+}
+
+.bloc_flux {
+	width: 300px;  /* Or whatever */
+  	height: 300px; /* Or whatever */
+  	background-color: red;
+  	margin-bottom:30px;
+}
+
+.bloc_flux p.titre { 
+	position: relative;
+	top:50%;
+	text-align: center;
+	font-size: 1.5rem;
+	transform: translateX(0%) translateY(-50%);
+	-webkit-transform: translateX(0%) translateY(-50%);
+}
 
 
 
