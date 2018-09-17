@@ -27,6 +27,10 @@ a.evitement:focus {
 	left: 0;
 }
 
+li {
+	display: block;
+}
+
 
 
 
@@ -53,6 +57,7 @@ nav.nav_principal ul {
 nav.nav_principal ul a {
 	text-decoration: none;
 	color:inherit;
+	padding:18px 0 18px 0;
 }
 
 nav.nav_principal ul li {
@@ -61,7 +66,6 @@ nav.nav_principal ul li {
 	padding-top:18px;
 	font-weight: 600;
 	color:#c1c1c1;
-	cursor: pointer;
 }
 
 nav.nav_principal ul li:nth-child(2) {
@@ -192,7 +196,7 @@ h1 {
 
 .icon_voirplus {
 	position: absolute;
-	top:0;
+	top:10px;
 	right:0;
 	width:20px;
 	height:40px;
@@ -270,6 +274,10 @@ input#tag_champs::placeholder {
 
 
 /* PAGE "MES LIVRES" EN LISTE */
+
+.bloc_livre_list .icon_voirplus {
+	top:2px !important;
+}
 
 .bloc_livre_list {
 	display: block;
@@ -456,11 +464,11 @@ section#flux_liste {
 	margin-left:-60px;
 }
 
-#flux_liste ul {
+#flux_liste {
 	border-top:1px solid #c1c1c1;
 }
 
-#flux_liste ul li {
+#flux_liste li {
 	padding:20px 60px 20px 60px;
 	border-bottom: 1px solid #c1c1c1;
 }
@@ -505,11 +513,13 @@ ul.content_flux {
 	width: 100%;
 }
 
+
 .flux_entree img {
 	position: relative;
 	width:15px;
 	vertical-align: baseline;
 }
+
 
 .voir_tout {
 	display: block;
@@ -529,6 +539,22 @@ ul.content_flux {
 	vertical-align: top;
 	margin-top:2px;
 	margin-left:5px;
+}
+
+.noborder {
+	border:0 !important;
+}
+
+.flux_entree select {
+	float:right;
+	background-color: white;
+	border-radius: none;
+	outline:none;
+	width:180px;
+	text-align: center;
+	text-align-last: center;
+	font-size: 0.8rem;
+	height:30px;
 }
 
 
