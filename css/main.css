@@ -31,6 +31,10 @@ li {
 	display: block;
 }
 
+.pointer {
+	cursor: pointer;
+}
+
 
 
 
@@ -222,16 +226,15 @@ h1 {
 	margin-left:5px;
 }
 
-.meslivres_ajouter { 
+.section_titre { 
 	display: block;
 	position: relative;
 	padding-top:40px;
 	padding-bottom: 35px;
 	font-weight: 700;
-	cursor: pointer;
 }
 
-.meslivres_ajouter svg {
+.section_titre svg {
 	position: relative;
 	width:25px;
 	vertical-align: top;
@@ -558,3 +561,128 @@ ul.content_flux {
 }
 
 
+
+/* PAGE PRÉFÉRENCES */
+
+nav.nav_secondaire_pref {
+	position: fixed;
+	width:100%;
+	height:60px;
+	z-index:100;
+	top:60px;
+	background-color: #e5e5e5;
+	min-width: 700px;
+	padding-left:0;
+	padding-right:0;
+}
+
+.nav_secondaire_pref ul li {
+	display: inline-block;
+	padding:20px 30px 20px 30px;
+	font-size: 0.9rem;
+	border-right:1px solid #c1c1c1;
+}
+
+.nav_secondaire_pref ul li.active {
+	background-color: #4A8FE2;
+	color:white;
+}
+
+#draggable_list { 
+	width: 50%;
+	list-style-type: none; 
+	font-size: 0.8rem;
+	min-width: 400px;
+	margin-bottom: 20px;
+}
+
+#draggable_list li span {
+	font-size: 0.8rem;
+	color:grey;
+	margin-left:8px;
+}
+
+#draggable_list li img.icon_draggable { 
+	display: inline-block;
+	vertical-align: top;
+}
+
+#draggable_list li img.icon_delete { 
+	display: inline-block;
+	vertical-align: top;
+	float:right;
+}
+
+#draggable_list li { 
+	cursor: move;
+	margin: 0 3px 3px 3px; 
+	padding: 5px 10px 5px 10px; 
+	font-size: 1.25em; 
+	height: auto; 
+	background: #e5e5e5;
+}
+
+
+#draggable_list .up, ul .down { float: left; }
+#draggable_list .up:before { content: "\f077"; }
+#draggable_list .down:before { content: "\f078"; }
+
+
+form#tag_ajout {
+	margin-left:0;
+	height:35px;
+	margin-bottom:0;
+	display: inline-block;
+}
+
+input.pref_tag_champs {
+	position: relative;
+	width:300px;
+	border-radius: 0;
+	border:none;
+	border-bottom: 1px solid #c1c1c1;
+	height:35px;
+	outline: inherit;
+	background-color: transparent;
+	color:black;
+	font-size: 0.9rem;
+	margin-right:30px;
+}
+
+input.pref_tag_champs::placeholder {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color:#c1c1c1;
+}
+
+	
+#tag_ajout img{
+	position: absolute;
+	width:35px;
+	left:320px;
+	color: #c1c1c1;
+	vertical-align: top;
+}
+
+#tag_renommer {
+	position: relative;
+	width:300px;
+	border-radius: 0;
+	border:none;
+	height:35px;
+	outline: inherit;
+	background-color: transparent;
+	color:black;
+	font-size: 0.9rem;
+	margin-left:100px;
+}
+
+
+#tag_ajout input[type="submit"]{
+ cursor:pointer;
+ background-color: white;
+ border-radius: 5px;
+ font-size: 0.8rem;
+ padding: 5px 30px 5px 30px;
+ border:1px solid #c1c1c1;
+}

@@ -9,7 +9,7 @@ $(".regular").slick({
 
 var ajout_selection=0;
 
-$(".meslivres_ajouter").click(function(){
+$(".section_titre").click(function(){
 	if (ajout_selection===0) {
 		$("form#tag_recherche").css("display","inline-block");
 		ajout_selection = 1;
@@ -23,3 +23,9 @@ $(".meslivres_ajouter").click(function(){
 		ajout_selection = 0;
 	}
 });
+
+
+$(function() {
+    $( "#draggable_list" ).sortable();
+    $( "#draggable_list" ).disableSelection();
+  });
