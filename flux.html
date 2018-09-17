@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>EDR</title>
+    <!--
+    <meta name="description" content="" />
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta property="og:title" content="EDR" />
+    <meta property="og:image" content="http://" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="EDR" />
+    <meta name="twitter:image" content="http://" />
+    <meta name="twitter:description" content="" />
+    -->
+    <meta content="width=device-width;initial-scale=1.0 ; maximum-scale=1.0 ; user-scalable=1 ;" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  </head>
+  <body>
+
+
+
+
+      <!-- Sur toutes les pages, le tout premier lien doit être en lien vers le contenu -->
+      <a class="evitement" href="#contenu">Aller au contenu</a>
+
+
+
+
+
+
+      <!-- Menu principal -->
+      <nav class="nav_principal" role="navigation" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Mes Livres</a></li>
+          <li class="active">Catalogues</li>
+          <li class="preferences">Préférences</li>
+        </ul>
+      </nav>
+
+
+
+
+
+      <!-- Menu secondaire -->
+      <nav class="nav_secondaire" role="navigation" aria-label="Menu secondaire">
+
+
+          <!-- Formulaire de recherche -->
+          <form id="nav_recherche_flux" role="search">
+            
+            <input type="search" id="menu_recherche" aria-label="Rechercher un livre" placeholder="Rechercher" />
+
+            <input type="image" id="lancer" src="img/baseline-search-24px-grey.svg" value="" alt="Lancer la recherche" />
+
+
+          </form>
+
+
+      </nav> <!-- fin du menu secondaire -->
+
+
+
+
+      <!-- Contenu principal -->
+      <main role="main">
+        <a id="contenu" tabindex="-1"></a>
+
+
+      <div class="fil_ariane">
+        <a href="catalogues.html" class="fil_ariane_icon">
+          <img src="img/baseline-arrow_back-24px.svg" alt="Retour">
+        </a>Catalogues / <span class="fil_active">Flux 1</span>
+      </div>
+
+
+      <section id="flux_liste">
+
+        <ul>
+
+
+          <!-- Bloc d'une entrée sans images -->
+          <a href="entree.html"><li class="flux_entree">
+            <span class="flux_title">Entrée 1</span>
+            <span class="flux_subtitle">56 livres</span>
+
+            <img src="img/baseline-arrow_forward_ios-24px.svg" alt="">
+
+          </li></a>
+
+
+
+          <!-- Bloc d'une entrée avec images -->
+          <li class="flux_entree">
+            <span class="flux_title">Entrée 2</span>
+            <span class="flux_subtitle">56 livres</span>
+
+            <p class="voir_tout">Voir tout
+              <img src="img/baseline-arrow_forward_ios-24px.svg" alt="">
+            </p> 
+
+
+
+            <ul class="content_flux">
+              
+              <li class="bloc_flux_couvertures">
+                <img src="img/livre1.jpg" alt="Couverture de Lore, par Aaron Mahnke">
+
+                <div class="legende">
+
+                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
+                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                
+                    <svg role="link" class="icon_voirplus">
+                      <a>
+                        <text opacity="0">Plus d'informations sur ce livre</text>
+                      </a>
+                      <g aria-hidden="true">
+                        <rect width="20" height="40"/>
+                      </g>
+                    </svg>
+                </div>
+              </li>
+
+
+              <li class="bloc_flux_couvertures">
+                <img src="img/livre2.jpg" alt="Couverture de Lore, par Aaron Mahnke">
+
+                <div class="legende">
+
+                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
+                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                
+                    <svg role="link" class="icon_voirplus">
+                      <a>
+                        <text opacity="0">Plus d'informations sur ce livre</text>
+                      </a>
+                      <g aria-hidden="true">
+                        <rect width="20" height="40"/>
+                      </g>
+                    </svg>
+                </div>
+              </li>
+
+
+              <li class="bloc_flux_couvertures">
+                <img src="img/livre3.jpg" alt="Couverture de Lore, par Aaron Mahnke">
+
+                <div class="legende">
+
+                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
+                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                
+                    <svg role="link" class="icon_voirplus">
+                      <a>
+                        <text opacity="0">Plus d'informations sur ce livre</text>
+                      </a>
+                      <g aria-hidden="true">
+                        <rect width="20" height="40"/>
+                      </g>
+                    </svg>
+                </div>
+
+              </li>
+
+
+              <li class="bloc_flux_couvertures">
+                <img src="img/livre4.jpg" alt="Couverture de Lore, par Aaron Mahnke">
+
+                <div class="legende">
+
+                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
+                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                
+                    <svg role="link" class="icon_voirplus">
+                      <a>
+                        <text opacity="0">Plus d'informations sur ce livre</text>
+                      </a>
+                      <g aria-hidden="true">
+                        <rect width="20" height="40"/>
+                      </g>
+                    </svg>
+                </div>
+
+              </li>
+
+
+              <li class="bloc_flux_couvertures">
+                <img src="img/livre1.jpg" alt="Couverture de Lore, par Aaron Mahnke">
+
+                <div class="legende">
+
+                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
+                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                
+                    <svg role="link" class="icon_voirplus">
+                      <a>
+                        <text opacity="0">Plus d'informations sur ce livre</text>
+                      </a>
+                      <g aria-hidden="true">
+                        <rect width="20" height="40"/>
+                      </g>
+                    </svg>
+                </div>
+
+              </li>
+
+
+              <li class="bloc_flux_couvertures">
+                <img src="img/livre2.jpg" alt="Couverture de Lore, par Aaron Mahnke">
+
+                <div class="legende">
+
+                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
+                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                
+                    <svg role="link" class="icon_voirplus">
+                      <a>
+                        <text opacity="0">Plus d'informations sur ce livre</text>
+                      </a>
+                      <g aria-hidden="true">
+                        <rect width="20" height="40"/>
+                      </g>
+                    </svg>
+                </div>
+
+              </li>
+
+
+              <li class="bloc_flux_couvertures">
+                <img src="img/livre3.jpg" alt="Couverture de Lore, par Aaron Mahnke">
+
+                <div class="legende">
+
+                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
+                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                
+                    <svg role="link" class="icon_voirplus">
+                      <a>
+                        <text opacity="0">Plus d'informations sur ce livre</text>
+                      </a>
+                      <g aria-hidden="true">
+                        <rect width="20" height="40"/>
+                      </g>
+                    </svg>
+                </div>
+
+              </li>
+
+
+            </ul>
+          </li>
+
+ 
+          
+
+ 
+
+        </ul>
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </main>
+
+
+
+      <!-- Mon footer -->
+      <footer role="contentinfo"> </footer>
+
+
+
+
+
+  </body>
+  <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</html>

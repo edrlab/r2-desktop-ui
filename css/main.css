@@ -7,6 +7,11 @@ body{
 	background:#fbfbfb;
 }
 
+a {
+	text-decoration: none;
+	color:inherit;
+}
+
 
 a.evitement {
 	display : inline-block ;
@@ -29,7 +34,7 @@ a.evitement:focus {
 
 nav.nav_principal {
 	position: fixed;
-	z-index:100;
+	z-index:102;
 	width:100%;
 	top:0;
 	height:60px;
@@ -97,6 +102,7 @@ nav.nav_secondaire svg {
 	top:15px;
 	width:35px;
 	height:35px;
+	margin-left:-5px;
 }
 
 nav.nav_secondaire svg:nth-child(2) {
@@ -163,12 +169,12 @@ h1 {
 	font-weight: 700;
 }
 
-.bloc_livre .legende {
+.legende {
 	width: 100%;
 	position: relative;
 }
 
-.bloc_livre p.titre_livre {
+.legende p.titre_livre {
 	position: relative;
 	padding-top:10px;
 	width: calc(100% - 40px);
@@ -176,7 +182,7 @@ h1 {
 	font-weight: 600;
 }
 
-.bloc_livre p.auteur_livre {
+.legende p.auteur_livre {
 	position: relative;
 	width: calc(100% - 40px);
 	font-size: 0.7rem;
@@ -184,7 +190,7 @@ h1 {
 	color:#c1c1c1;
 }
 
-.bloc_livre .icon_voirplus {
+.icon_voirplus {
 	position: absolute;
 	top:0;
 	right:0;
@@ -204,7 +210,7 @@ h1 {
 	padding:2px 8px 2px 8px;
 }
 
-.voir_plus svg {
+.voir_plus img {
 	width: 15px;
 	height:15px;
 	vertical-align: top;
@@ -257,6 +263,7 @@ input#tag_champs::placeholder {
 #tag_recherche #lancer{
 	position: relative;
 	width:35px;
+	color: #c1c1c1;
 	vertical-align: top;
 }
 
@@ -330,14 +337,16 @@ input#tag_champs::placeholder {
 
 /* PAGE CATALOGUES */
 
+main#catalogue {
+	margin-top:100px;
+}
 
 .flux_ajouter {
 	display: block;
 	position: relative;
-	padding-top:40px;
+	padding-top:0;
 	padding-bottom: 10px;
 	font-weight: 700;
-	cursor: pointer;
 }
 
 .flux_ajouter svg {
@@ -361,26 +370,165 @@ form#flux_recherche {
   	flex-flow: row wrap;
   	height: auto;
   	justify-content: space-between;
+}
 
-
+.flux_container a { 
+	text-decoration: none;
 }
 
 .bloc_flux {
-	width: 300px;  /* Or whatever */
-  	height: 300px; /* Or whatever */
-  	background-color: red;
+	width: 300px; 
+  	height: 300px;
   	margin-bottom:30px;
+  	background-color: grey;
 }
 
-.bloc_flux p.titre { 
+.bloc_flux p.flux_titre { 
 	position: relative;
 	top:50%;
 	text-align: center;
+	color:white;
 	font-size: 1.5rem;
 	transform: translateX(0%) translateY(-50%);
 	-webkit-transform: translateX(0%) translateY(-50%);
 }
 
 
+/* PAGE FLUX */
+
+form#nav_recherche_flux {
+	display: inline-block;
+	border-bottom: 1px solid #c1c1c1;
+	margin-left:0px;
+	height:35px;
+	margin-top:8px;
+}
+
+input#menu_recherche {
+	position: relative;
+	width:300px;
+	border-radius: 0;
+	border:none;
+	height:35px;
+	outline: inherit;
+	background-color: transparent;
+	color:black;
+	font-size: 0.9rem;
+}
+
+input#menu_recherche::placeholder {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color:#c1c1c1;
+}
+	
+#nav_recherche_flux #lancer{
+	position: relative;
+	width:35px;
+	vertical-align: top;
+}
+
+
+.fil_ariane { 
+	position: relative;
+	padding:25px 0px 25px 0px;
+	vertical-align: top;
+}
+
+
+.fil_ariane_icon img { 
+	position: relative;
+	margin:0px 20px 0px 0px;
+	vertical-align: top;
+}
+
+.fil_ariane a { 
+	text-decoration: none;
+}
+
+
+span.fil_active {
+	font-weight: 700;
+}
+
+section#flux_liste {
+	width: calc(100% + 120px);
+	margin-left:-60px;
+}
+
+#flux_liste ul {
+	border-top:1px solid #c1c1c1;
+}
+
+#flux_liste ul li {
+	padding:20px 60px 20px 60px;
+	border-bottom: 1px solid #c1c1c1;
+}
+
+#flux_liste span.flux_title {
+	font-weight: 600;
+}
+
+#flux_liste span {
+	display: inline-block;
+}
+
+#flux_liste span.flux_subtitle {
+	color:grey;
+	font-size: 0.8rem;
+	margin-left:10px;
+}
+
+ul.content_flux {
+	display: flex;
+   	width:100%;
+  	flex-flow: row wrap;
+  	height: auto;
+	border:none !important;
+	margin-top:30px;
+}
+
+.content_flux li {
+	padding:0 !important;
+	border:none !important;
+	display: inline-block;
+}
+
+.bloc_flux_couvertures {
+	width: 150px; 
+  	height: auto;
+  	margin-right:20px;
+  	margin-bottom:10px;
+}
+
+.content_flux li img {
+	width: 100%;
+}
+
+.flux_entree img {
+	position: relative;
+	width:15px;
+	vertical-align: baseline;
+}
+
+.voir_tout {
+	display: block;
+	position: relative;
+	margin-top:0px;
+	float:right;
+	right:0;
+	border-radius: 2px;
+	border:1px solid black;
+	font-size: 0.8rem;
+	padding:2px 8px 2px 8px;
+}
+
+.voir_tout img {
+	width: 15px;
+	height:15px;
+	vertical-align: top;
+	margin-top:2px;
+	margin-left:5px;
+}
 
 

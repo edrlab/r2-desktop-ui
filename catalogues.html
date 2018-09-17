@@ -47,48 +47,11 @@
 
 
 
-      <!-- Menu secondaire -->
-      <nav class="nav_secondaire" role="navigation" aria-label="Menu secondaire">
-
-
-          <svg role="link">
-            <a href="index.html">
-              <text opacity="0">Présenter les couvertures de livres en grille</text>
-              <g aria-hidden="true">
-                <rect width="35" height="35"/>
-              </g>
-            </a>
-          </svg>
-
-
-
-          <svg role="link">
-            <a href="index_list.html">
-              <text opacity="0">Présenter les livres sous forme de liste</text>
-              <g aria-hidden="true">
-                <rect width="35" height="35"/>
-              </g>
-            </a>
-          </svg>
-
-
-
-          <!-- Formulaire de recherche -->
-          <form id="nav_recherche" role="search">
-            
-            <input type="search" id="menu_recherche" aria-label="Rechercher une type de littérature" placeholder="Rechercher" />
-
-            <input type="image" id="lancer" src="img/unsvg.svg" value="" alt="Lancer la recherche" />
-          </form>
-
-
-      </nav> <!-- fin du menu secondaire -->
-
-
+      
 
 
       <!-- Contenu principal -->
-      <main role="main">
+      <main role="main" id="catalogue">
         <a id="contenu" tabindex="-1"></a>
 
         
@@ -115,18 +78,25 @@
         <section>
           <div class="flux_container">
 
-            <div class="bloc_flux">
-              <p class="titre">Open Textbook</p>
-            </div>
-            <div class="bloc_flux">
-              <p class="titre">Flux 1</p>
-            </div>
-            <div class="bloc_flux">
-              <p class="titre">Flux 2</p>
-            </div>
-            <div class="bloc_flux">
-              <p class="titre">Flux 3</p>
-            </div>
+            <!-- Ceci est un bloc d'un flux -->
+            <a href="flux.html"><div class="bloc_flux">
+              <p class="flux_titre">Open Textbook</p>
+            </div></a>
+
+            <!-- Ceci est un bloc d'un flux -->
+            <a href="flux.html"><div class="bloc_flux">
+              <p class="flux_titre">Flux 1</p>
+            </div></a>
+
+            <!-- Ceci est un bloc d'un flux -->
+            <a href="flux.html"><div class="bloc_flux">
+              <p class="flux_titre">Flux 2</p>
+            </div></a>
+
+            <!-- Ceci est un bloc d'un flux -->
+            <a href="flux.html"><div class="bloc_flux">
+              <p class="flux_titre">Flux 3</p>
+            </div></a>
 
 
           </div>
