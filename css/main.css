@@ -35,6 +35,13 @@ li {
 	cursor: pointer;
 }
 
+.hors-ecran {
+	float:left;
+	width:0px;
+	height:3px;
+	overflow: hidden;
+}
+
 
 
 
@@ -576,9 +583,14 @@ nav.nav_secondaire_pref {
 	padding-right:0;
 }
 
+.nav_secondaire_pref a {
+	width:100%;
+	padding:20px 30px 20px 30px;
+}
+
 .nav_secondaire_pref ul li {
 	display: inline-block;
-	padding:20px 30px 20px 30px;
+	padding:20px 0 20px 0;
 	font-size: 0.9rem;
 	border-right:1px solid #c1c1c1;
 }
@@ -679,10 +691,53 @@ input.pref_tag_champs::placeholder {
 
 
 #tag_ajout input[type="submit"]{
- cursor:pointer;
- background-color: white;
- border-radius: 5px;
- font-size: 0.8rem;
- padding: 5px 30px 5px 30px;
- border:1px solid #c1c1c1;
+	cursor:pointer;
+	background-color: white;
+	border-radius: 5px;
+	font-size: 0.8rem;
+	padding: 5px 30px 5px 30px;
+	border:1px solid #c1c1c1;
+}
+
+#theme_list { 
+	width: 50%;
+	list-style-type: none; 
+	font-size: 0.8rem;
+	min-width: 400px;
+	margin-bottom: 20px;
+}
+
+
+#theme_list li { 
+	margin: 0 3px 3px 3px; 
+	padding: 5px 10px 5px 10px; 
+	font-size: 1.25em; 
+	height: auto; 
+	background: #e5e5e5;
+}
+
+#theme_list img {
+	float:right;
+}
+
+#langues_list {
+	width: 30%;
+	list-style-type: none; 
+	font-size: 0.8rem;
+	min-width: 300px;
+	margin-bottom: 20px;
+}
+
+#langues_list li { 
+	margin: 0 3px 3px 3px; 
+	padding: 5px 10px 5px 10px; 
+	font-size: 1.25em; 
+	height: auto; 
+	background: #e5e5e5;
+	cursor: pointer;
+}
+
+#langues_list .active {
+	background-color: grey;
+	color:white;
 }

@@ -37,8 +37,8 @@
       <nav class="nav_principal" role="navigation" aria-label="Menu principal">
         <ul>
           <li><a href="index.html">Mes Livres</a></li>
-          <li class="active">Catalogues</li>
-          <li class="preferences"><a href="preferences.html">Préférences</a></li>
+          <li><a href="catalogues.html">Catalogues</a></li>
+          <li class="preferences active">Préférences</li>
         </ul>
       </nav>
 
@@ -46,61 +46,48 @@
 
 
 
-      
+      <!-- Menu secondaire -->
+      <nav class="nav_secondaire_pref" role="navigation" aria-label="Menu secondaire">
+
+        <ul>
+          <li>
+            <a href="preferences.html">Gérer mes tags</a>
+          </li><li>
+            <a href="preferences_2.html">Préférences de lecture</a>
+          </li><li class="active">
+            <a href="preferences_3.html">Langue de l'interface <span class="hors-ecran">(rubrique courante)</span></a>
+          </li>
+        </ul>
+
+      </nav> <!-- fin du menu secondaire -->
+
+
 
 
       <!-- Contenu principal -->
-      <main role="main" id="catalogue">
+      <main role="main">
         <a id="contenu" tabindex="-1"></a>
 
-        
-
-        <section>
-
-          <a class="flux_ajouter">
-            Ajouter un flux
-          </a>
+          <div class="section_titre">Choix de la langue</div>
+      
 
 
-          <!-- Formulaire de recherche -->
-          <form id="flux_recherche" role="search">
-              
-            <input type="search" id="tag_champs" placeholder="Coller l'URL d'un flux" />
+          <ul id="langues_list">
 
-          </form>
+            <li class="active">
+              Français
+            </li>
 
+            <li>
+              English
+            </li>
 
-        </section>
+            <li>
+              Deutsch
+            </li>
 
-
-
-        <section>
-          <div class="flux_container">
-
-            <!-- Ceci est un bloc d'un flux -->
-            <a href="flux.html"><div class="bloc_flux">
-              <p class="flux_titre">Open Textbook</p>
-            </div></a>
-
-            <!-- Ceci est un bloc d'un flux -->
-            <a href="flux.html"><div class="bloc_flux">
-              <p class="flux_titre">Flux 1</p>
-            </div></a>
-
-            <!-- Ceci est un bloc d'un flux -->
-            <a href="flux.html"><div class="bloc_flux">
-              <p class="flux_titre">Flux 2</p>
-            </div></a>
-
-            <!-- Ceci est un bloc d'un flux -->
-            <a href="flux.html"><div class="bloc_flux">
-              <p class="flux_titre">Flux 3</p>
-            </div></a>
-
-
-          </div>
-        </section>
-
+          
+          </ul>
 
 
 
@@ -117,6 +104,7 @@
 
   </body>
   <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+  <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </html>

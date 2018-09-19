@@ -33,3 +33,16 @@ $(function() {
     $( "#draggable_list" ).disableSelection();
   });
 
+
+
+$(".load").css("opacity","0");
+setTimeout(function(){ 
+	$(".load").css("display","none");
+}, 2000);
+
+
+$("#langues_list li").click(function(){
+	$("#langues_list li").removeClass("active");
+	$(this).addClass("active");
+
+});

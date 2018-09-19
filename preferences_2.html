@@ -50,10 +50,10 @@
       <nav class="nav_secondaire_pref" role="navigation" aria-label="Menu secondaire">
 
         <ul>
-          <li class="active">
-            <a href="preferences.html">Gérer mes tags <span class="hors-ecran">(rubrique courante)</span></a>
-          </li><li>
-            <a href="preferences_2.html">Préférences de lecture</a>
+          <li>
+            <a href="preferences.html">Gérer mes tags</a>
+          </li><li class="active">
+            <a href="preferences_2.html">Préférences de lecture <span class="hors-ecran">(rubrique courante)</span></a>
           </li><li>
             <a href="preferences_3.html">Langue de l'interface</a>
           </li>
@@ -68,37 +68,30 @@
       <main role="main">
         <a id="contenu" tabindex="-1"></a>
 
-          <div class="section_titre">Disposition sur l'écran d'accueil</div>
+          <div class="section_titre">Mes thèmes</div>
       
 
 
-          <ul id="draggable_list">
-            <li> <img class="icon_draggable" src="img/baseline-drag_handle-24px.svg" alt="ce bloc est déplacable au clic">
-              Science fiction
-              <span>4 livres</span>
+          <ul id="theme_list">
 
-              <img class="icon_delete" src="img/baseline-close-24px.svg" alt="supprimer ce bloc">
-            </li>
+            <a href="modify_theme.html"><li>
+              Thème 1
+              <img src="img/baseline-edit-24px.svg" alt="">
+            </li></a>
+
             <li>
-              <img class="icon_draggable" src="img/baseline-drag_handle-24px.svg" alt="ce bloc est déplacable au clic">
-              Pour le bac
-              <span>4 livres</span>
-
-              <img class="icon_delete" src="img/baseline-close-24px.svg" alt="supprimer ce bloc">
+              Thème 2
+              <img src="img/baseline-edit-24px.svg" alt="">
             </li>
-            <li>
-              <img class="icon_draggable" src="img/baseline-drag_handle-24px.svg" alt="ce bloc est déplacable au clic">
-              Histoire
-              <span>4 livres</span>
 
-              <img class="icon_delete" src="img/baseline-close-24px.svg" alt="supprimer ce bloc">
+            <li>
+              Thème 3
+              <img src="img/baseline-edit-24px.svg" alt="">
             </li>
-            <li>
-              <img class="icon_draggable" src="img/baseline-drag_handle-24px.svg" alt="ce bloc est déplacable au clic">
-              Favoris
-              <span>4 livres</span>
 
-              <img class="icon_delete" src="img/baseline-close-24px.svg" alt="supprimer ce bloc">
+            <li>
+              Thème 4
+              <img src="img/baseline-edit-24px.svg" alt="">
             </li>
           </ul>
 
@@ -110,27 +103,6 @@
           <input type="search" class="pref_tag_champs" placeholder="Rechercher un tag" /> 
         
         </form>
-
-
-
-
-        <div class="section_titre">Renommer un tag</div>
-
-        <!-- Formulaire pour renommer -->
-        <form id="tag_ajout" role="search">
-            
-          <input type="search" class="pref_tag_champs" placeholder="Rechercher un tag" /> 
-          <img src="img/baseline-search-24px-grey.svg" alt="" aria-hidden="true" />
-
-          <input type="search" class="pref_tag_champs" placeholder="Nouveau nom" />
-
-          <input type="submit">
-
-
-
-
-        </form>
-
 
 
 
