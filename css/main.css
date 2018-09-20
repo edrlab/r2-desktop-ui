@@ -577,7 +577,7 @@ nav.nav_secondaire_pref {
 	height:60px;
 	z-index:100;
 	top:60px;
-	background-color: #e5e5e5;
+	background-color: #EDEDED;
 	min-width: 700px;
 	padding-left:0;
 	padding-right:0;
@@ -740,4 +740,43 @@ input.pref_tag_champs::placeholder {
 #langues_list .active {
 	background-color: grey;
 	color:white;
+}
+
+#ariane_theme {
+	background-color: #F8F8F8;
+	height:170px;
+	width: calc(100% + 120px);
+	margin-left:-60px;
+	padding: 10px 60px 10px 60px;
+	border-bottom: 1px solid #e5e5e5;
+	min-width: 700px;
+}
+
+#tag_ajout label {
+	font-size: 0.9rem;
+}
+
+#lecture {
+	width:calc(100% + 120px);
+	margin-left:-60px;
+	display: flex;
+}
+
+.fenetre_lecture {
+	background-color: white;
+	flex-grow: 2;
+	height:100vh;
+}
+
+.lecture_parametres { 
+	flex-grow: 1;
+	border-left: 1px solid #e5e5e5;
+}
+
+
+#lecture_parametres_list li {
+	padding:20px 20px 20px 20px;
+	border-bottom: 1px solid #e5e5e5;
+	font-size: 0.9rem;
+	font-weight: 600;
 }

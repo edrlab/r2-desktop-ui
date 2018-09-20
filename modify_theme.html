@@ -68,43 +68,52 @@
       <main role="main">
         <a id="contenu" tabindex="-1"></a>
 
-          <div class="section_titre">Mes thèmes</div>
-      
+
+        <section id="ariane_theme">
+
+          <div class="fil_ariane">
+            <a href="preferences_2.html" class="fil_ariane_icon">
+              <img src="img/baseline-arrow_back-24px.svg" alt="Retour">
+            </a>Mes thèmes / <span class="fil_active">Mon thème 1</span>
+          </div>
 
 
-          <ul id="theme_list">
-
-            <a href="modify_theme.html"><li>
-              Thème 1
-              <img src="img/baseline-edit-24px.svg" alt="">
-            </li></a>
-
-            <li>
-              Thème 2
-              <img src="img/baseline-edit-24px.svg" alt="">
-            </li>
-
-            <li>
-              Thème 3
-              <img src="img/baseline-edit-24px.svg" alt="">
-            </li>
-
-            <li>
-              Thème 4
-              <img src="img/baseline-edit-24px.svg" alt="">
-            </li>
-          </ul>
+          <!-- Formulaire pour renommer -->
+          <form id="tag_ajout">
+              
+            <input type="text" class="pref_tag_champs" placeholder="Mon thème 1" aria-label="Nouveau nom du thème" /> 
+          
+            <input type="checkbox" id="defaut" name="defaut" value="themepardefaut">
+            <label for="defaut">Thème par défaut ?</label>
 
 
+          </form>
 
-        <!-- Formulaire de recherche -->
-        <form id="tag_ajout" role="search">
-            
-          <input type="search" class="pref_tag_champs" placeholder="Rechercher un tag" /> 
+        </section>
+
+
+        <section id="lecture">
+
+          <div class="fenetre_lecture"></div>
+          <div class="lecture_parametres">
+            <ul id="lecture_parametres_list">
+              <li>Texte </li>
+              <li>Affichage</li>
+              <li>Espacements</li>
+              <li>Accessibilité</li>
+            </ul>
+          </div>
+
+
+
+
+
+
+        </section>
+          
+
+
         
-        </form>
-
-
 
 
 
