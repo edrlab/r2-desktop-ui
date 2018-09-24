@@ -450,6 +450,10 @@ input#tag_champs::placeholder {
 	font-size: 0.8rem;
 }
 
+.bloc_livre_list button {
+	float:left;
+}
+
 .bloc_livre_list:nth-child(odd){
 	background-color: #f3f3f3;
 }
