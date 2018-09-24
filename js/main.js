@@ -18,6 +18,9 @@ $(".section_titre").click(function(){
 		$('html, body').animate({
         	scrollTop: $("#tag_recherche").offset().top
         }, 500);
+
+		$("#tag_champs").focus();
+
 	}
 
 	else{
