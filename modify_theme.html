@@ -94,10 +94,71 @@
 
         <section id="lecture">
 
-          <div class="fenetre_lecture"></div>
+          <div class="fenetre_lecture">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+          </div>
           <div class="lecture_parametres">
             <ul id="lecture_parametres_list">
+
+
               <li>Texte </li>
+
+
+                <div class="onglet_content">
+                  
+
+                  <div class="ligne_onglet_content">
+                    <label for="taille_texte">Taille du texte</label>
+
+                    <div class="onglet_centrer">
+                      <span class="indicateur_slider" style="font-size:12pt">a</span>
+                      <input type="range"
+                        id="taille_texte" 
+                        min="12"
+                        max="36"
+                        value="14"
+                        step="1"
+                        aria-valuemin="12"
+                        aria-valuemax="36"
+                        aria-valuenow="14"
+                        oninput="outputUpdate(value)">
+                      <output for="taille_texte" id="volume" class="hors-ecran">14</output>
+                      <span class="indicateur_slider" style="font-size:36pt">a</span>
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="ligne_onglet_content">
+                    <label for="police_texte">Police</label>
+
+                    <div class="onglet_centrer">
+                      <select id="police_texte" name="select">
+                      <option value="arial" selected>Arial</option>
+                      <option value="helvetica">Helvetica</option>
+                      <option value="times">Times</option>
+                      <option value="futura">Futura</option>
+                      <option value="courier">Courier</option>
+                      <option value="comic">Comic Sans MS</option>
+ 
+                      </select>
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="ligne_onglet_content">
+
+                  </div>
+
+
+
+
+                </div>
+
+
               <li>Affichage</li>
               <li>Espacements</li>
               <li>Accessibilité</li>
@@ -120,9 +181,6 @@
       </main>
 
 
-
-      <!-- Mon footer -->
-      <footer role="contentinfo"> </footer>
 
 
 
