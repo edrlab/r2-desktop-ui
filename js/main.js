@@ -205,3 +205,11 @@ $("#police_texte").on("change", function(){
   var value = $(this).val();
     $(".fenetre_lecture").css("font-family", value);
 });
+
+$("#option_gauche").click(function(){
+  $(".fenetre_lecture").css("text-align","left");
+});
+
+$("#option_justif").click(function(){
+  $(".fenetre_lecture").css("text-align","justify");
+});

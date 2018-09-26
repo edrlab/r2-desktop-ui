@@ -964,7 +964,7 @@ input.pref_tag_champs::placeholder {
 	border-bottom: 1px solid #e5e5e5;
 }
 
-.ligne_onglet_content label {
+.ligne_onglet_content label, .ligne_onglet_content .sous-titre {
 	display: block;
 	font-size: 0.9rem;
 	font-weight: 600;
@@ -1052,4 +1052,10 @@ input[type=range]::-moz-range-thumb {
     column-gap: 40px;
 }
 
+#option_defile, #option_pagine{
+	background-color: red;
+	width:30px;
+	height:30px;
+	display: inline-block;
+}
 
