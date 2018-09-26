@@ -7,6 +7,19 @@ $(".regular").slick({
 });
 
 
+
+
+
+
+$(window).on("resize", function () {
+    var navhauteur = $("nav_principal").height();
+$("nav_secondaire").css("top",navhauteur);
+}).resize();
+
+
+
+
+
 var ajout_selection=0;
 
 $(".section_titre").click(function(){
