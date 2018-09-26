@@ -170,6 +170,38 @@ triggers.forEach((trigger) => {
 
 
 
+
+/* PAGE MODIFIER THÈME */
+
+$("#lecture_parametres_list li").click(function(){
+  var prochainediv = $(this).next();
+
+  if ( prochainediv.css('display') == 'none') {
+    prochainediv.slideDown();
+  }
+
+  else {
+    prochainediv.slideUp();
+  }
+
+});
+
+
+
+
 function outputUpdate(vol) { 
-  document.querySelector('#volume').value = vol;
+  document.querySelector('#valeur_taille').value = vol;
 }
+
+
+
+$("#taille_texte").on("input change", function() {
+    var value = document.getElementById("taille_texte").value;
+    $(".fenetre_lecture").css("font-size", "" + value + "pt");
+});
+
+
+$("#police_texte").on("change", function(){
+  var value = $(this).val();
+    $(".fenetre_lecture").css("font-family", value);
+});

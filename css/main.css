@@ -946,9 +946,11 @@ input.pref_tag_champs::placeholder {
 	font-size: 0.9rem;
 	font-weight: 600;
 	background-color: white;
+	cursor: pointer;
 }
 
 .onglet_content {
+	display: none;
 	position: relative;
 	width:100%;
 	background-color: #F8F8F8;
@@ -1031,6 +1033,23 @@ input[type=range]::-moz-range-thumb {
 	text-align-last: center;
 	font-size: 0.8rem;
 	height:30px;
+}
+
+.fenetre_lecture {
+	height:auto;
+	padding:50px;
+	font-size:12pt;
+	line-height: auto;
+	column-count: 2;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	transition : all 0.1s;
+	-webkit-transition : all 0.1s;
+	text-align: justify;
+    text-justify: auto;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
 }
 
 
