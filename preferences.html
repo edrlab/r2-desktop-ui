@@ -26,7 +26,7 @@
 
 
       <!-- Sur toutes les pages, le tout premier lien doit être en lien vers le contenu -->
-      <a class="evitement" href="#contenu">Aller au contenu</a>
+      <a class="avoidance" href="#contenu">Aller au contenu</a>
 
 
 
@@ -34,7 +34,7 @@
 
 
       <!-- Menu principal -->
-      <nav class="nav_principal" role="navigation" aria-label="Menu principal">
+      <nav class="main_navigation" role="navigation" aria-label="Menu principal">
         <ul>
           <li><a href="index.html">Mes Livres</a></li>
           <li><a href="catalogues.html">Catalogues</a></li>
@@ -47,11 +47,11 @@
 
 
       <!-- Menu secondaire -->
-      <nav class="nav_secondaire nav_secondaire_pref" role="navigation" aria-label="Menu secondaire">
+      <nav class="nav_secondary nav_secondary_pref" role="navigation" aria-label="Menu secondaire">
 
         <ul>
           <li class="active">
-            <a href="preferences.html">Gérer mes tags <span class="hors-ecran">(rubrique courante)</span></a>
+            <a href="preferences.html">Gérer mes tags <span class="out-of-screen">(rubrique courante)</span></a>
           </li><li>
             <a href="preferences_2.html">Préférences de lecture</a>
           </li><li>
@@ -68,7 +68,7 @@
       <main role="main">
         <a id="contenu" tabindex="-1"></a>
 
-          <div class="section_titre">Disposition sur l'écran d'accueil</div>
+          <div class="section_title">Disposition sur l'écran d'accueil</div>
       
 
 
@@ -105,24 +105,24 @@
 
 
           <!-- Formulaire de recherche -->
-        <form id="tag_ajout">
+        <form id="tag_add">
             
-          <input type="text" class="pref_tag_champs" placeholder="Ajouter un tag" title="Ajouter un tag"/> 
+          <input type="text" class="pref_tag_inputs" placeholder="Ajouter un tag" title="Ajouter un tag"/> 
         
         </form>
 
 
 
 
-        <div class="section_titre">Renommer un tag</div>
+        <div class="section_title">Renommer un tag</div>
 
         <!-- Formulaire pour renommer -->
-        <form id="tag_ajout">
+        <form id="tag_add">
             
-          <input type="search" class="pref_tag_champs" placeholder="Tag à renommer" title="Tag à renommer" /> 
+          <input type="search" class="pref_tag_inputs" placeholder="Tag à renommer" title="Tag à renommer" /> 
           <img src="img/baseline-search-24px-grey.svg" alt="" aria-hidden="true" />
 
-          <input type="text" class="pref_tag_champs" placeholder="Nouveau nom" title="nouveau nom" />
+          <input type="text" class="pref_tag_inputs" placeholder="Nouveau nom" title="nouveau nom" />
 
           <input type="submit" title="Confirmer">
 

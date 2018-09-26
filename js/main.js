@@ -12,21 +12,21 @@ $(".regular").slick({
 
 /* Pour faire en sorte qu'en text-only 200%, les menus ne se superposent pas */
 $(window).on("resize", function () {
-  var navhauteur = $(".nav_principal").height();
-  var nav2hauteur = $(".nav_secondaire").height();
-  var nav3hauteur = $(".nav_secondaire_pref").height();
-  $(".nav_secondaire").css("top",navhauteur);
-  $(".nav_secondaire_pref").css("top",navhauteur);
+  var navhauteur = $(".main_navigation").height();
+  var nav2hauteur = $(".nav_secondary").height();
+  var nav3hauteur = $(".nav_secondary_pref").height();
+  $(".nav_secondary").css("top",navhauteur);
+  $(".nav_secondary_pref").css("top",navhauteur);
   $("main").css("margin-top",navhauteur+nav2hauteur+"px");
 }).resize();
 
 
 setInterval(function(){ 
-  var navhauteur = $(".nav_principal").height();
-  var nav2hauteur = $(".nav_secondaire").height();
-  var nav3hauteur = $(".nav_secondaire_pref").height();
-  $(".nav_secondaire").css("top",navhauteur);
-  $(".nav_secondaire_pref").css("top",navhauteur);
+  var navhauteur = $(".main_navigation").height();
+  var nav2hauteur = $(".nav_secondary").height();
+  var nav3hauteur = $(".nav_secondary_pref").height();
+  $(".nav_secondary").css("top",navhauteur);
+  $(".nav_secondary_pref").css("top",navhauteur);
   $("main").css("margin-top",navhauteur+nav2hauteur+"px");
  }, 200);
 
@@ -34,21 +34,21 @@ setInterval(function(){
 /* Faire apparaître et disparaitre le champs tout en bas de la page "Mes livres" */
 var ajout_selection=0;
 
-$(".section_titre").click(function(){
+$(".section_title").click(function(){
 	if (ajout_selection===0) {
-		$("form#tag_recherche").css("display","inline-block");
+		$("form#tag_search").css("display","inline-block");
 		$('#icon_plus').attr('src', 'img/baseline-remove-24px.svg');
 
 		ajout_selection = 1;
 		$('html, body').animate({
-        	scrollTop: $("#tag_recherche").offset().top
+        	scrollTop: $("#tag_search").offset().top
         }, 500);
 
-		$("#tag_champs").focus();
+		$("#tag_inputs").focus();
 	}
 
 	else{
-		$("form#tag_recherche").css("display","none");
+		$("form#tag_search").css("display","none");
 		$('#icon_plus').attr('src', 'img/baseline-add-24px.svg');
 		ajout_selection = 0;
 	}
@@ -58,8 +58,8 @@ $(".section_titre").click(function(){
 
 
 /* Rendre bleu la langue sélectionnée dans la page préférences */
-$("#langues_list li").click(function(){
-	$("#langues_list li").removeClass("active");
+$("#languages_list li").click(function(){
+	$("#languages_list li").removeClass("active");
 	$(this).addClass("active");
 
 });
@@ -183,7 +183,7 @@ triggers.forEach((trigger) => {
 
 
 /* L'accordéon des options dans la page "modifier thème" */
-$("#lecture_parametres_list li").click(function(){
+$("#read_settings_list li").click(function(){
   var prochainediv = $(this).next();
 
   if ( prochainediv.css('display') == 'none') {
@@ -205,22 +205,22 @@ function outputUpdate(vol) {
 
 $("#taille_texte").on("input change", function() {
     var value = document.getElementById("taille_texte").value;
-    $(".fenetre_lecture").css("font-size", "" + value + "pt");
+    $(".window_read").css("font-size", "" + value + "pt");
 });
 
 
 /* L'input pour la police de caractère dans la page "modifier thème" */
 $("#police_texte").on("change", function(){
   var value = $(this).val();
-    $(".fenetre_lecture").css("font-family", value);
+    $(".window_read").css("font-family", value);
 });
 
 
 /* Les boutons justifier texte dans la page "modifier thème" */
 $("#option_gauche").click(function(){
-  $(".fenetre_lecture").css("text-align","left");
+  $(".window_read").css("text-align","left");
 });
 
 $("#option_justif").click(function(){
-  $(".fenetre_lecture").css("text-align","justify");
+  $(".window_read").css("text-align","justify");
 });

@@ -118,7 +118,7 @@
     </a>
 
     <!-- Images-boutons (submit en loupe par exemple) -->
-    <input type="image" src="loupe.png" alt="Lancer la recherche" />
+    <input type="image" src="loupe.png" alt="lancer la recherche" />
 
     <!-- Légendes d'images -->
     <figure role="group">
@@ -179,7 +179,7 @@
     <!-- Quand un lien est grisé car actif, penser à faire apparaître un indicateur (même s'il est planqué hors écran), pour qu'on comprenne. Ou alors retirer le lien <a>. -->
     <a href="">
      Investisseurs
-     <span class="hors-ecran">(rubrique courante)</span>
+     <span class="out-of-screen">(rubrique courante)</span>
     </a>
 
     <!-- Utiliser seulement  em, %, rem pour les font-size -->
@@ -190,14 +190,14 @@
 
     <!-- Sur toutes les pages, le tout premier lien doit être en lien vers le contenu -->
     
-    <a class="evitement" href="#contenu">Aller au contenu</a>
+    <a class="avoidance" href="#contenu">Aller au contenu</a>
     
     <main role="main">
       <a id="contenu" tabindex="-1"> </a>
     </main>
 
     <style>
-      a.evitement {
+      a.avoidance {
       display : inline-block ;
       color : #555 ;
       background : #fff ;
@@ -207,7 +207,7 @@
       z-index : 100 ;
     }
     
-    a.evitement:focus {
+    a.avoidance:focus {
       left: 0;
     }
 

@@ -26,7 +26,7 @@
 
 
       <!-- Sur toutes les pages, le tout premier lien doit être en lien vers le contenu -->
-      <a class="evitement" href="#contenu">Aller au contenu</a>
+      <a class="avoidance" href="#contenu">Aller au contenu</a>
 
 
 
@@ -34,7 +34,7 @@
 
 
       <!-- Menu principal -->
-      <nav class="nav_principal" role="navigation" aria-label="Menu principal">
+      <nav class="main_navigation" role="navigation" aria-label="Menu principal">
         <ul>
           <li><a href="index.html">Mes Livres</a></li>
           <li class="active">Catalogues</li>
@@ -47,15 +47,15 @@
 
 
       <!-- Menu secondaire -->
-      <nav class="nav_secondaire" role="navigation" aria-label="Menu secondaire">
+      <nav class="nav_secondary" role="navigation" aria-label="Menu secondaire">
 
 
           <!-- Formulaire de recherche -->
-          <form id="nav_recherche_flux" role="search">
+          <form id="nav_search_flux" role="search">
             
-            <input type="search" id="menu_recherche" aria-label="Rechercher une type de littérature" placeholder="Rechercher" title="rechercher"/>
+            <input type="search" id="menu_search" aria-label="Rechercher une type de littérature" placeholder="Rechercher" title="rechercher"/>
 
-            <input type="image" id="lancer" src="img/baseline-search-24px-grey.svg" value="" alt="Lancer la recherche" />
+            <input type="image" id="launch" src="img/baseline-search-24px-grey.svg" value="" alt="lancer la recherche" />
 
 
           </form>
@@ -71,18 +71,18 @@
         <a id="contenu" tabindex="-1"></a>
 
 
-      <div class="fil_ariane">
-        <a href="flux.html" class="fil_ariane_icon">
+      <div class="breadcrumb">
+        <a href="flux.html" class="breadcrumb_icon">
           <img src="img/baseline-arrow_back-24px.svg" alt="Retour">
-        </a>Catalogues / Flux 1 / <span class="fil_active">Entrée 2</span>
+        </a>Catalogues / Flux 1 / <span class="breadcrumb_active">Entrée 2</span>
       </div>
 
 
-      <section id="flux_liste">
+      <section id="flux_list">
 
 
 
-          <li class="flux_entree noborder">
+          <li class="flux_element noborder">
             <span class="flux_title">Entrée 2</span>
 
             <select name="filtres">
@@ -101,20 +101,20 @@
 
 
               <!-- Bloc pour un livre -->
-              <li class="bloc_flux_couvertures">
+              <li class="block_flux_covers">
                 <img src="img/livre1.jpg" alt="">
 
-                <div class="legende">
+                <div class="legend">
 
-                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
-                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                  <p class="book_title" aria-label="Titre du livre">Euphoria</p>
+                  <p class="book_author" aria-label="Auteur du livre">Lily King</p>
                 
                     <button 
                       type="button" 
                       aria-haspopup="dialog"
                       aria-controls="dialog"
                       title="Voir plus">
-                      <svg role="link" class="icon_voirplus">
+                      <svg role="link" class="icon_seemore">
                         <g aria-hidden="true">
                           <path d="M0 0h24v24H0z" fill="none"/>
                           <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
@@ -126,20 +126,20 @@
 
 
               <!-- Bloc pour un livre -->
-              <li class="bloc_flux_couvertures">
+              <li class="block_flux_covers">
                 <img src="img/livre2.jpg" alt="">
 
-                <div class="legende">
+                <div class="legend">
 
-                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
-                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                  <p class="book_title" aria-label="Titre du livre">Euphoria</p>
+                  <p class="book_author" aria-label="Auteur du livre">Lily King</p>
                 
                     <button 
                       type="button" 
                       aria-haspopup="dialog"
                       aria-controls="dialog"
                       title="Voir plus">
-                      <svg role="link" class="icon_voirplus">
+                      <svg role="link" class="icon_seemore">
                         <g aria-hidden="true">
                           <path d="M0 0h24v24H0z" fill="none"/>
                           <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
@@ -151,20 +151,20 @@
 
 
               <!-- Bloc pour un livre -->
-              <li class="bloc_flux_couvertures">
+              <li class="block_flux_covers">
                 <img src="img/livre3.jpg" alt="">
 
-                <div class="legende">
+                <div class="legend">
 
-                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
-                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                  <p class="book_title" aria-label="Titre du livre">Euphoria</p>
+                  <p class="book_author" aria-label="Auteur du livre">Lily King</p>
                 
                     <button 
                       type="button" 
                       aria-haspopup="dialog"
                       aria-controls="dialog"
                       title="Voir plus">
-                      <svg role="link" class="icon_voirplus">
+                      <svg role="link" class="icon_seemore">
                         <g aria-hidden="true">
                           <path d="M0 0h24v24H0z" fill="none"/>
                           <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
@@ -177,20 +177,20 @@
 
 
               <!-- Bloc pour un livre -->
-              <li class="bloc_flux_couvertures">
+              <li class="block_flux_covers">
                 <img src="img/livre4.jpg" alt="">
 
-                <div class="legende">
+                <div class="legend">
 
-                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
-                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                  <p class="book_title" aria-label="Titre du livre">Euphoria</p>
+                  <p class="book_author" aria-label="Auteur du livre">Lily King</p>
                 
                     <button 
                       type="button" 
                       aria-haspopup="dialog"
                       aria-controls="dialog"
                       title="Voir plus">
-                      <svg role="link" class="icon_voirplus">
+                      <svg role="link" class="icon_seemore">
                         <g aria-hidden="true">
                           <path d="M0 0h24v24H0z" fill="none"/>
                           <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
@@ -203,20 +203,20 @@
 
 
               <!-- Bloc pour un livre -->
-              <li class="bloc_flux_couvertures">
+              <li class="block_flux_covers">
                 <img src="img/livre1.jpg" alt="">
 
-                <div class="legende">
+                <div class="legend">
 
-                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
-                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                  <p class="book_title" aria-label="Titre du livre">Euphoria</p>
+                  <p class="book_author" aria-label="Auteur du livre">Lily King</p>
                 
                     <button 
                       type="button" 
                       aria-haspopup="dialog"
                       aria-controls="dialog"
                       title="Voir plus">
-                      <svg role="link" class="icon_voirplus">
+                      <svg role="link" class="icon_seemore">
                         <g aria-hidden="true">
                           <path d="M0 0h24v24H0z" fill="none"/>
                           <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
@@ -229,20 +229,20 @@
 
 
               <!-- Bloc pour un livre -->
-              <li class="bloc_flux_couvertures">
+              <li class="block_flux_covers">
                 <img src="img/livre2.jpg" alt="">
 
-                <div class="legende">
+                <div class="legend">
 
-                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
-                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                  <p class="book_title" aria-label="Titre du livre">Euphoria</p>
+                  <p class="book_author" aria-label="Auteur du livre">Lily King</p>
                 
                     <button 
                       type="button" 
                       aria-haspopup="dialog"
                       aria-controls="dialog"
                       title="Voir plus">
-                      <svg role="link" class="icon_voirplus">
+                      <svg role="link" class="icon_seemore">
                         <g aria-hidden="true">
                           <path d="M0 0h24v24H0z" fill="none"/>
                           <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
@@ -255,20 +255,20 @@
 
 
               <!-- Bloc pour un livre -->
-              <li class="bloc_flux_couvertures">
+              <li class="block_flux_covers">
                 <img src="img/livre3.jpg" alt="">
 
-                <div class="legende">
+                <div class="legend">
 
-                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
-                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                  <p class="book_title" aria-label="Titre du livre">Euphoria</p>
+                  <p class="book_author" aria-label="Auteur du livre">Lily King</p>
                 
                     <button 
                       type="button" 
                       aria-haspopup="dialog"
                       aria-controls="dialog"
                       title="Voir plus">
-                      <svg role="link" class="icon_voirplus">
+                      <svg role="link" class="icon_seemore">
                         <g aria-hidden="true">
                           <path d="M0 0h24v24H0z" fill="none"/>
                           <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
@@ -281,20 +281,20 @@
 
 
               <!-- Bloc pour un livre -->
-              <li class="bloc_flux_couvertures">
+              <li class="block_flux_covers">
                 <img src="img/livre1.jpg" alt="">
 
-                <div class="legende">
+                <div class="legend">
 
-                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
-                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                  <p class="book_title" aria-label="Titre du livre">Euphoria</p>
+                  <p class="book_author" aria-label="Auteur du livre">Lily King</p>
                 
                     <button 
                       type="button" 
                       aria-haspopup="dialog"
                       aria-controls="dialog"
                       title="Voir plus">
-                      <svg role="link" class="icon_voirplus">
+                      <svg role="link" class="icon_seemore">
                         <g aria-hidden="true">
                           <path d="M0 0h24v24H0z" fill="none"/>
                           <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
@@ -306,20 +306,20 @@
 
 
               <!-- Bloc pour un livre -->
-              <li class="bloc_flux_couvertures">
+              <li class="block_flux_covers">
                 <img src="img/livre2.jpg" alt="">
 
-                <div class="legende">
+                <div class="legend">
 
-                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
-                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                  <p class="book_title" aria-label="Titre du livre">Euphoria</p>
+                  <p class="book_author" aria-label="Auteur du livre">Lily King</p>
                 
                     <button 
                       type="button" 
                       aria-haspopup="dialog"
                       aria-controls="dialog"
                       title="Voir plus">
-                      <svg role="link" class="icon_voirplus">
+                      <svg role="link" class="icon_seemore">
                         <g aria-hidden="true">
                           <path d="M0 0h24v24H0z" fill="none"/>
                           <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
@@ -331,20 +331,20 @@
 
 
               <!-- Bloc pour un livre -->
-              <li class="bloc_flux_couvertures">
+              <li class="block_flux_covers">
                 <img src="img/livre3.jpg" alt="">
 
-                <div class="legende">
+                <div class="legend">
 
-                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
-                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                  <p class="book_title" aria-label="Titre du livre">Euphoria</p>
+                  <p class="book_author" aria-label="Auteur du livre">Lily King</p>
                 
                     <button 
                       type="button" 
                       aria-haspopup="dialog"
                       aria-controls="dialog"
                       title="Voir plus">
-                      <svg role="link" class="icon_voirplus">
+                      <svg role="link" class="icon_seemore">
                         <g aria-hidden="true">
                           <path d="M0 0h24v24H0z" fill="none"/>
                           <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
@@ -357,20 +357,20 @@
 
 
               <!-- Bloc pour un livre -->
-              <li class="bloc_flux_couvertures">
+              <li class="block_flux_covers">
                 <img src="img/livre4.jpg" alt="">
 
-                <div class="legende">
+                <div class="legend">
 
-                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
-                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                  <p class="book_title" aria-label="Titre du livre">Euphoria</p>
+                  <p class="book_author" aria-label="Auteur du livre">Lily King</p>
                 
                     <button 
                       type="button" 
                       aria-haspopup="dialog"
                       aria-controls="dialog"
                       title="Voir plus">
-                      <svg role="link" class="icon_voirplus">
+                      <svg role="link" class="icon_seemore">
                         <g aria-hidden="true">
                           <path d="M0 0h24v24H0z" fill="none"/>
                           <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
@@ -383,20 +383,20 @@
 
 
               <!-- Bloc pour un livre -->
-              <li class="bloc_flux_couvertures">
+              <li class="block_flux_covers">
                 <img src="img/livre1.jpg" alt="">
 
-                <div class="legende">
+                <div class="legend">
 
-                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
-                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                  <p class="book_title" aria-label="Titre du livre">Euphoria</p>
+                  <p class="book_author" aria-label="Auteur du livre">Lily King</p>
                 
                     <button 
                       type="button" 
                       aria-haspopup="dialog"
                       aria-controls="dialog"
                       title="Voir plus">
-                      <svg role="link" class="icon_voirplus">
+                      <svg role="link" class="icon_seemore">
                         <g aria-hidden="true">
                           <path d="M0 0h24v24H0z" fill="none"/>
                           <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
@@ -409,20 +409,20 @@
 
 
               <!-- Bloc pour un livre -->
-              <li class="bloc_flux_couvertures">
+              <li class="block_flux_covers">
                 <img src="img/livre2.jpg" alt="">
 
-                <div class="legende">
+                <div class="legend">
 
-                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
-                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                  <p class="book_title" aria-label="Titre du livre">Euphoria</p>
+                  <p class="book_author" aria-label="Auteur du livre">Lily King</p>
                 
                     <button 
                       type="button" 
                       aria-haspopup="dialog"
                       aria-controls="dialog"
                       title="Voir plus">
-                      <svg role="link" class="icon_voirplus">
+                      <svg role="link" class="icon_seemore">
                         <g aria-hidden="true">
                           <path d="M0 0h24v24H0z" fill="none"/>
                           <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
@@ -435,20 +435,20 @@
 
 
               <!-- Bloc pour un livre -->
-              <li class="bloc_flux_couvertures">
+              <li class="block_flux_covers">
                 <img src="img/livre3.jpg" alt="">
 
-                <div class="legende">
+                <div class="legend">
 
-                  <p class="titre_livre" aria-label="Titre du livre">Euphoria</p>
-                  <p class="auteur_livre" aria-label="Auteur du livre">Lily King</p>
+                  <p class="book_title" aria-label="Titre du livre">Euphoria</p>
+                  <p class="book_author" aria-label="Auteur du livre">Lily King</p>
                 
                     <button 
                       type="button" 
                       aria-haspopup="dialog"
                       aria-controls="dialog"
                       title="Voir plus">
-                      <svg role="link" class="icon_voirplus">
+                      <svg role="link" class="icon_seemore">
                         <g aria-hidden="true">
                           <path d="M0 0h24v24H0z" fill="none"/>
                           <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
@@ -552,8 +552,8 @@
             </ul>
 
             <!-- Formulaire de recherche -->
-            <form id="flux_recherche">
-              <input type="text" id="tag_champs" title="ajouter un tag" placeholder="Ajouter un tag" />
+            <form id="flux_search">
+              <input type="text" id="tag_inputs" title="ajouter un tag" placeholder="Ajouter un tag" />
             </form>
 
             <h3>Description</h3>

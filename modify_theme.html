@@ -26,7 +26,7 @@
 
 
       <!-- Sur toutes les pages, le tout premier lien doit être en lien vers le contenu -->
-      <a class="evitement" href="#contenu">Aller au contenu</a>
+      <a class="avoidance" href="#contenu">Aller au contenu</a>
 
 
 
@@ -34,7 +34,7 @@
 
 
       <!-- Menu principal -->
-      <nav class="nav_principal" role="navigation" aria-label="Menu principal">
+      <nav class="main_navigation" role="navigation" aria-label="Menu principal">
         <ul>
           <li><a href="index.html">Mes Livres</a></li>
           <li><a href="catalogues.html">Catalogues</a></li>
@@ -47,13 +47,13 @@
 
 
       <!-- Menu secondaire -->
-      <nav class="nav_secondaire_pref" role="navigation" aria-label="Menu secondaire">
+      <nav class="nav_secondary_pref" role="navigation" aria-label="Menu secondaire">
 
         <ul>
           <li>
             <a href="preferences.html">Gérer mes tags</a>
           </li><li class="active">
-            <a href="preferences_2.html">Préférences de lecture <span class="hors-ecran">(rubrique courante)</span></a>
+            <a href="preferences_2.html">Préférences de read <span class="out-of-screen">(rubrique courante)</span></a>
           </li><li>
             <a href="preferences_3.html">Langue de l'interface</a>
           </li>
@@ -69,19 +69,19 @@
         <a id="contenu" tabindex="-1"></a>
 
 
-        <section id="ariane_theme">
+        <section id="breadcrumb_theme">
 
-          <div class="fil_ariane">
-            <a href="preferences_2.html" class="fil_ariane_icon">
+          <div class="breadcrumb">
+            <a href="preferences_2.html" class="breadcrumb_icon">
               <img src="img/baseline-arrow_back-24px.svg" alt="Retour">
-            </a>Mes thèmes / <span class="fil_active">Mon thème 1</span>
+            </a>Mes thèmes / <span class="breadcrumb_active">Mon thème 1</span>
           </div>
 
 
           <!-- Formulaire pour renommer -->
-          <form id="tag_ajout">
+          <form id="tag_add">
               
-            <input type="text" class="pref_tag_champs" placeholder="Mon thème 1" aria-label="Nouveau nom du thème" /> 
+            <input type="text" class="pref_tag_inputs" placeholder="Mon thème 1" aria-label="Nouveau nom du thème" /> 
           
             <input type="checkbox" id="defaut" name="defaut" value="themepardefaut">
             <label for="defaut">Thème par défaut ?</label>
@@ -92,28 +92,28 @@
         </section>
 
 
-        <section id="lecture">
+        <section id="read">
 
-          <div class="fenetre_lecture">
+          <div class="window_read">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
 
           </div>
-          <div class="lecture_parametres">
-            <ul id="lecture_parametres_list">
+          <div class="read_settings">
+            <ul id="read_settings_list">
 
 
               <li>Texte</li>
 
 
-                <div class="onglet_content">
+                <div class="tab_content">
                   
 
-                  <div class="ligne_onglet_content">
+                  <div class="line_tab_content">
                     <label for="taille_texte">Taille du texte</label>
 
-                    <div class="onglet_centrer">
-                      <span class="indicateur_slider" style="font-size:12pt">a</span>
+                    <div class="center_in_tab">
+                      <span class="slider_marker" style="font-size:12pt">a</span>
                       <input type="range"
                         id="taille_texte" 
                         min="10"
@@ -124,18 +124,18 @@
                         aria-valuemax="20"
                         aria-valuenow="12"
                         oninput="outputUpdate(value)">
-                      <output for="taille_texte" id="valeur_taille" class="hors-ecran">14</output>
-                      <span class="indicateur_slider" style="font-size:36pt">a</span>
+                      <output for="taille_texte" id="valeur_taille" class="out-of-screen">14</output>
+                      <span class="slider_marker" style="font-size:36pt">a</span>
                     </div>
                   </div>
 
 
 
 
-                  <div class="ligne_onglet_content">
+                  <div class="line_tab_content">
                     <label for="police_texte">Police</label>
 
-                    <div class="onglet_centrer">
+                    <div class="center_in_tab">
                       <select id="police_texte" name="select">
                       <option value="arial" selected>Arial</option>
                       <option value="helvetica">Helvetica</option>
@@ -151,7 +151,7 @@
 
 
 
-                  <div class="ligne_onglet_content">
+                  <div class="line_tab_content">
 
                   </div>
 
@@ -165,16 +165,16 @@
 
 
 
-              <div class="onglet_content">
+              <div class="tab_content">
 
-                <div class="ligne_onglet_content">
-                  <div class="sous-titre">Disposition</div>
+                <div class="line_tab_content">
+                  <div class="subheading">Disposition</div>
 
-                  <div class="onglet_centrer">
-                    <div id="option_defile" role="link">
+                  <div class="center_in_tab">
+                    <div id="scroll_option" role="link">
                       Défilé
                     </div>
-                    <div id="option_pagine" role="link">
+                    <div id="page_option" role="link">
                       Paginé
                     </div>
                   </div>
@@ -182,10 +182,10 @@
 
 
 
-                <div class="ligne_onglet_content">
-                  <div class="sous-titre">Justification</div>
+                <div class="line_tab_content">
+                  <div class="subheading">Justification</div>
 
-                  <div class="onglet_centrer">
+                  <div class="center_in_tab">
                     <div id="option_gauche" role="link">
                       Gauche
                     </div>
@@ -205,14 +205,14 @@
 
               <li>Espacements</li>
 
-              <div class="onglet_content">
+              <div class="tab_content">
 
               </div>
 
 
               <li>Accessibilité</li>
 
-              <div class="onglet_content">
+              <div class="tab_content">
 
               </div>
 

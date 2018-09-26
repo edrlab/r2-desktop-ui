@@ -13,7 +13,7 @@ a {
 }
 
 
-a.evitement {
+a.avoidance {
 	display : inline-block ;
 	color : #555 ;
 	background : #fff ;
@@ -23,7 +23,7 @@ a.evitement {
 	z-index : 100 ;
 }
     
-a.evitement:focus {
+a.avoidance:focus {
 	left: 0;
 }
 
@@ -35,7 +35,7 @@ li {
 	cursor: pointer;
 }
 
-.hors-ecran {
+.out-of-screen {
 	float:left;
 	width:0px;
 	height:3px;
@@ -47,7 +47,7 @@ li {
 
 /* BARRE DE NAV PRINCIPALE */
 
-nav.nav_principal {
+nav.main_navigation {
 	position: fixed;
 	z-index:102;
 	width:100%;
@@ -62,18 +62,18 @@ nav.nav_principal {
 	min-width: 600px;
 }
 
-nav.nav_principal ul {
+nav.main_navigation ul {
 	padding-left:60px;
 	padding-right:60px;
 }
 
-nav.nav_principal ul a {
+nav.main_navigation ul a {
 	text-decoration: none;
 	color:inherit;
 	padding:18px 0 18px 0;
 }
 
-nav.nav_principal ul li {
+nav.main_navigation ul li {
 	display: inline-block;
 	padding-bottom:18px;
 	padding-top:18px;
@@ -81,11 +81,11 @@ nav.nav_principal ul li {
 	color:#c1c1c1;
 }
 
-nav.nav_principal ul li:nth-child(2) {
+nav.main_navigation ul li:nth-child(2) {
 	margin-left:60px;
 }
 
-nav.nav_principal ul li.active {
+nav.main_navigation ul li.active {
 	color:black;
 	border-bottom:3px solid black;
 	padding-bottom:15px;
@@ -100,7 +100,7 @@ nav.nav_principal ul li.active {
 
 /* BARRE DE NAV SECONDAIRE */
 
-nav.nav_secondaire {
+nav.nav_secondary {
 	position: fixed;
 	width:100%;
 	height:auto;
@@ -115,7 +115,7 @@ nav.nav_secondaire {
 }
 
 
-nav.nav_secondaire svg {
+nav.nav_secondary svg {
 	display: inline-block;
 	position: relative;
 	top:15px;
@@ -124,19 +124,19 @@ nav.nav_secondaire svg {
 	margin-left:-5px;
 }
 
-nav.nav_secondaire svg:nth-child(2) {
+nav.nav_secondary svg:nth-child(2) {
 	margin-left:20px;
 }
 
 
-form#nav_recherche {
+form#nav_search {
 	display: inline-block;
 	border-bottom: 1px solid #c1c1c1;
 	margin-left:40px;
 	height:auto;
 }
 
-input#menu_recherche {
+input#menu_search {
 	position: relative;
 	width:300px;
 	border-radius: 0;
@@ -148,13 +148,13 @@ input#menu_recherche {
 	font-size: 0.9rem;
 }
 
-input#menu_recherche::placeholder {
+input#menu_search::placeholder {
 	font-size: 0.9rem;
 	font-weight: 300;
 	color:#c1c1c1;
 }
 	
-#nav_recherche #lancer{
+#nav_search #launch{
 	position: relative;
 	width:35px;
 	vertical-align: top;
@@ -189,12 +189,12 @@ h1 {
 	font-weight: 700;
 }
 
-.legende {
+.legend {
 	width: 100%;
 	position: relative;
 }
 
-.legende p.titre_livre {
+.legend p.book_title {
 	position: relative;
 	padding-top:10px;
 	width: calc(100% - 40px);
@@ -202,7 +202,7 @@ h1 {
 	font-weight: 600;
 }
 
-.legende p.auteur_livre {
+.legend p.book_author {
 	position: relative;
 	width: calc(100% - 40px);
 	font-size: 0.7rem;
@@ -210,7 +210,7 @@ h1 {
 	color:#c1c1c1;
 }
 
-.icon_voirplus {
+.icon_seemore {
 	position: absolute;
 	top:10px;
 	right:0;
@@ -218,7 +218,7 @@ h1 {
 	height:40px;
 }
 
-.voir_plus {
+.see_more {
 	display: block;
 	position: absolute;
 	top:0;
@@ -230,7 +230,7 @@ h1 {
 	padding:2px 8px 2px 8px;
 }
 
-.voir_plus img {
+.see_more img {
 	width: 15px;
 	height:15px;
 	vertical-align: top;
@@ -238,7 +238,7 @@ h1 {
 	margin-left:5px;
 }
 
-.section_titre { 
+.section_title { 
 	display: block;
 	position: relative;
 	padding-top:40px;
@@ -246,14 +246,14 @@ h1 {
 	font-weight: 700;
 }
 
-.section_titre img {
+.section_title img {
 	position: relative;
 	width:25px;
 	vertical-align: top;
 	height:25px;
 }
 
-form#tag_recherche {
+form#tag_search {
 	border-bottom: 1px solid #c1c1c1;
 	margin-left:0;
 	height:auto;
@@ -261,7 +261,7 @@ form#tag_recherche {
 	display: none;
 }
 
-input#tag_champs {
+input#tag_inputs {
 	position: relative;
 	width:300px;
 	border-radius: 0;
@@ -273,20 +273,20 @@ input#tag_champs {
 	font-size: 0.9rem;
 }
 
-input#tag_champs::placeholder {
+input#tag_inputs::placeholder {
 	font-size: 0.9rem;
 	font-weight: 300;
 	color:#c1c1c1;
 }
 	
-#tag_recherche #lancer{
+#tag_search #launch{
 	position: relative;
 	width:35px;
 	color: #c1c1c1;
 	vertical-align: top;
 }
 
-.bloc_livre button {
+.block_book button {
 	cursor: pointer;
 	z-index:100;
 }
@@ -432,7 +432,7 @@ input#tag_champs::placeholder {
 	margin-top:30px;
 }
 
-.dialog_right form#flux_recherche {
+.dialog_right form#flux_search {
 	margin-bottom:0;
 }
 
@@ -442,7 +442,7 @@ input#tag_champs::placeholder {
 /* PAGE "MES LIVRES" EN LISTE */
 
 
-.bloc_livre_list {
+.block_book_list {
 	display: block;
 	width: calc(100% + 120px);
 	margin-left:-60px;
@@ -452,15 +452,15 @@ input#tag_champs::placeholder {
 	font-size: 0.8rem;
 }
 
-.bloc_livre_list button {
+.block_book_list button {
 	float:left;
 }
 
-.bloc_livre_list:nth-child(odd){
+.block_book_list:nth-child(odd){
 	background-color: #f3f3f3;
 }
 
-.bloc_livre_list .icon_voirplus {
+.block_book_list .icon_seemore {
 	position: relative;
 	float:left;
 	display: inline-block;
@@ -470,22 +470,22 @@ input#tag_champs::placeholder {
 	top:2px !important;
 }
 
-.bloc_livre_list p.titre_livre {
+.block_book_list p.book_title {
 	display: inline-block;
 	font-weight: 600;
 }
 
-.bloc_livre_list p.auteur_livre {
+.block_book_list p.book_author {
 	display: inline-block;
 }
 
-.bloc_livre_list p.infos_sup {
+.block_book_list p.infos_sup {
 	display: inline-block;
 	width:15%;
 	color:grey;
 }
 
-.list_titre_livre {
+.list_book_title {
 	display: inline-block;
 	width: calc(70% - 50px);
 }
@@ -511,13 +511,13 @@ input#tag_champs::placeholder {
 }
 
 
-/* PAGE CATALOGUES */
+/* PAGE catalogS */
 
-main#catalogue {
+main#catalog {
 	margin-top:100px;
 }
 
-.flux_ajouter {
+.flux_add {
 	display: block;
 	position: relative;
 	padding-top:0;
@@ -525,14 +525,14 @@ main#catalogue {
 	font-weight: 700;
 }
 
-.flux_ajouter svg {
+.flux_add svg {
 	position: relative;
 	width:25px;
 	vertical-align: top;
 	height:25px;
 }
 
-form#flux_recherche {
+form#flux_search {
 	border-bottom: 1px solid #c1c1c1;
 	margin-left:0;
 	height:auto;
@@ -552,14 +552,14 @@ form#flux_recherche {
 	text-decoration: none;
 }
 
-.bloc_flux {
+.block_flux {
 	width: 300px; 
   	height: 300px;
   	margin-bottom:30px;
   	background-color: grey;
 }
 
-.bloc_flux p.flux_titre { 
+.block_flux p.flux_title { 
 	position: relative;
 	top:50%;
 	text-align: center;
@@ -572,7 +572,7 @@ form#flux_recherche {
 
 /* PAGE FLUX */
 
-form#nav_recherche_flux {
+form#nav_search_flux {
 	display: inline-block;
 	border-bottom: 1px solid #c1c1c1;
 	margin-left:0px;
@@ -580,7 +580,7 @@ form#nav_recherche_flux {
 	margin-top:8px;
 }
 
-input#menu_recherche {
+input#menu_search {
 	position: relative;
 	width:300px;
 	border-radius: 0;
@@ -592,64 +592,64 @@ input#menu_recherche {
 	font-size: 0.9rem;
 }
 
-input#menu_recherche::placeholder {
+input#menu_search::placeholder {
 	font-size: 0.9rem;
 	font-weight: 300;
 	color:#c1c1c1;
 }
 	
-#nav_recherche_flux #lancer{
+#nav_search_flux #launch{
 	position: relative;
 	width:35px;
 	vertical-align: top;
 }
 
 
-.fil_ariane { 
+.breadcrumb { 
 	position: relative;
 	padding:25px 0px 25px 0px;
 	vertical-align: top;
 }
 
 
-.fil_ariane_icon img { 
+.breadcrumb_icon img { 
 	position: relative;
 	margin:0px 20px 0px 0px;
 	vertical-align: top;
 }
 
-.fil_ariane a { 
+.breadcrumb a { 
 	text-decoration: none;
 }
 
 
-span.fil_active {
+span.breadcrumb_active {
 	font-weight: 700;
 }
 
-section#flux_liste {
+section#flux_list {
 	width: calc(100% + 120px);
 	margin-left:-60px;
 }
 
-#flux_liste {
+#flux_list {
 	border-top:1px solid #c1c1c1;
 }
 
-#flux_liste li {
+#flux_list li {
 	padding:20px 60px 20px 60px;
 	border-bottom: 1px solid #c1c1c1;
 }
 
-#flux_liste span.flux_title {
+#flux_list span.flux_title {
 	font-weight: 600;
 }
 
-#flux_liste span {
+#flux_list span {
 	display: inline-block;
 }
 
-#flux_liste span.flux_subtitle {
+#flux_list span.flux_subtitle {
 	color:grey;
 	font-size: 0.8rem;
 	margin-left:10px;
@@ -670,14 +670,14 @@ ul.content_flux {
 	display: inline-block;
 }
 
-.bloc_flux_couvertures {
+.block_flux_covers {
 	width: 150px; 
   	height: auto;
   	margin-right:20px;
   	margin-bottom:10px;
 }
 
-.bloc_flux_couvertures .legende button {
+.block_flux_covers .legend button {
 	position: absolute;
     top: 0;
     right: 0;
@@ -685,7 +685,7 @@ ul.content_flux {
     height: 40px;
 }
 
-.bloc_flux_couvertures .legende button svg{
+.block_flux_covers .legend button svg{
 	top:10px;
 }
 
@@ -694,7 +694,7 @@ ul.content_flux {
 }
 
 
-.flux_entree img {
+.flux_element img {
 	position: relative;
 	width:15px;
 	vertical-align: baseline;
@@ -725,7 +725,7 @@ ul.content_flux {
 	border:0 !important;
 }
 
-.flux_entree select {
+.flux_element select {
 	float:right;
 	background-color: white;
 	border-radius: none;
@@ -741,7 +741,7 @@ ul.content_flux {
 
 /* PAGE PRÉFÉRENCES */
 
-nav.nav_secondaire_pref {
+nav.nav_secondary_pref {
 	position: fixed;
 	width:100%;
 	height:auto;
@@ -754,19 +754,19 @@ nav.nav_secondaire_pref {
 	padding-bottom:0;
 }
 
-.nav_secondaire_pref a {
+.nav_secondary_pref a {
 	width:100%;
 	padding:20px 30px 20px 30px;
 }
 
-.nav_secondaire_pref ul li {
+.nav_secondary_pref ul li {
 	display: inline-block;
 	padding:20px 0 20px 0;
 	font-size: 0.9rem;
 	border-right:1px solid #c1c1c1;
 }
 
-.nav_secondaire_pref ul li.active {
+.nav_secondary_pref ul li.active {
 	background-color: #4A8FE2;
 	color:white;
 }
@@ -811,14 +811,14 @@ nav.nav_secondaire_pref {
 #draggable_list .down:before { content: "\f078"; }
 
 
-form#tag_ajout {
+form#tag_add {
 	margin-left:0;
 	height:auto;
 	margin-bottom:0;
 	display: inline-block;
 }
 
-input.pref_tag_champs {
+input.pref_tag_inputs {
 	position: relative;
 	width:300px;
 	border-radius: 0;
@@ -832,14 +832,14 @@ input.pref_tag_champs {
 	margin-right:30px;
 }
 
-input.pref_tag_champs::placeholder {
+input.pref_tag_inputs::placeholder {
 	font-size: 0.9rem;
 	font-weight: 300;
 	color:#c1c1c1;
 }
 
 	
-#tag_ajout img{
+#tag_add img{
 	position: absolute;
 	width:35px;
 	left:320px;
@@ -847,21 +847,7 @@ input.pref_tag_champs::placeholder {
 	vertical-align: top;
 }
 
-#tag_renommer {
-	position: relative;
-	width:300px;
-	border-radius: 0;
-	border:none;
-	height:35px;
-	outline: inherit;
-	background-color: transparent;
-	color:black;
-	font-size: 0.9rem;
-	margin-left:100px;
-}
-
-
-#tag_ajout input[type="submit"]{
+#tag_add input[type="submit"]{
 	cursor:pointer;
 	background-color: white;
 	border-radius: 5px;
@@ -891,7 +877,7 @@ input.pref_tag_champs::placeholder {
 	float:right;
 }
 
-#langues_list {
+#languages_list {
 	width: 30%;
 	list-style-type: none; 
 	font-size: 0.8rem;
@@ -899,7 +885,7 @@ input.pref_tag_champs::placeholder {
 	margin-bottom: 20px;
 }
 
-#langues_list li { 
+#languages_list li { 
 	margin: 0 3px 3px 3px; 
 	padding: 5px 10px 5px 10px; 
 	font-size: 1.25em; 
@@ -908,12 +894,12 @@ input.pref_tag_champs::placeholder {
 	cursor: pointer;
 }
 
-#langues_list .active {
+#languages_list .active {
 	background-color: grey;
 	color:white;
 }
 
-#ariane_theme {
+#breadcrumb_theme {
 	background-color: #F8F8F8;
 	height:170px;
 	width: calc(100% + 120px);
@@ -923,29 +909,29 @@ input.pref_tag_champs::placeholder {
 	min-width: 700px;
 }
 
-#tag_ajout label {
+#tag_add label {
 	font-size: 0.9rem;
 }
 
-#lecture {
+#read {
 	width:calc(100% + 120px);
 	margin-left:-60px;
 	display: flex;
 }
 
-.fenetre_lecture {
+.window_read {
 	background-color: white;
 	width:60%;
 	height:100vh;
 }
 
-.lecture_parametres { 
+.read_settings { 
 	width: 40%;
 	border-left: 1px solid #e5e5e5;
 }
 
 
-#lecture_parametres_list li {
+#read_settings_list li {
 	padding:20px 20px 20px 20px;
 	border-bottom: 1px solid #e5e5e5;
 	font-size: 0.9rem;
@@ -954,14 +940,14 @@ input.pref_tag_champs::placeholder {
 	cursor: pointer;
 }
 
-.onglet_content {
+.tab_content {
 	display: none;
 	position: relative;
 	width:100%;
 	background-color: #F8F8F8;
 }
 
-.ligne_onglet_content {
+.line_tab_content {
 	position: relative;
 	width:100%;
 	height:auto;
@@ -969,19 +955,19 @@ input.pref_tag_champs::placeholder {
 	border-bottom: 1px solid #e5e5e5;
 }
 
-.ligne_onglet_content label, .ligne_onglet_content .sous-titre {
+.line_tab_content label, .line_tab_content .subheading {
 	display: block;
 	font-size: 0.9rem;
 	font-weight: 600;
 }
 
-.indicateur_slider {
+.slider_marker {
 	position: relative;
 	vertical-align: middle;
 	color:#6B6B6B;
 }
 
-.onglet_centrer {
+.center_in_tab {
 	position: relative;
 	text-align: center;
 }
@@ -1029,7 +1015,7 @@ input[type=range]::-moz-range-thumb {
   margin-top: -6px;
 }
 
-.ligne_onglet_content select {
+.line_tab_content select {
 	background-color: white;
 	border-radius: none;
 	outline:none;
@@ -1040,7 +1026,7 @@ input[type=range]::-moz-range-thumb {
 	height:30px;
 }
 
-.fenetre_lecture {
+.window_read {
 	height:auto;
 	padding:50px;
 	font-size:12pt;
@@ -1057,7 +1043,7 @@ input[type=range]::-moz-range-thumb {
     column-gap: 40px;
 }
 
-#option_defile, #option_pagine{
+#scroll_option, #page_option{
 	background-color: red;
 	width:30px;
 	height:30px;
