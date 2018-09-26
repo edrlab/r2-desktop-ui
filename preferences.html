@@ -47,7 +47,7 @@
 
 
       <!-- Menu secondaire -->
-      <nav class="nav_secondaire_pref" role="navigation" aria-label="Menu secondaire">
+      <nav class="nav_secondaire nav_secondaire_pref" role="navigation" aria-label="Menu secondaire">
 
         <ul>
           <li class="active">
@@ -145,7 +145,14 @@
 
   </body>
   <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-  <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+  <script type="text/javascript" src='js/jquery-ui.js'></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+
+  <script type="text/javascript">
+    $(function() {
+        $( "#draggable_list" ).sortable();
+        $( "#draggable_list" ).disableSelection();
+    });
+  </script>
 </html>

@@ -133,7 +133,7 @@ form#nav_recherche {
 	display: inline-block;
 	border-bottom: 1px solid #c1c1c1;
 	margin-left:40px;
-	height:35px;
+	height:auto;
 }
 
 input#menu_recherche {
@@ -256,7 +256,7 @@ h1 {
 form#tag_recherche {
 	border-bottom: 1px solid #c1c1c1;
 	margin-left:0;
-	height:35px;
+	height:auto;
 	margin-bottom:50px;
 	display: none;
 }
@@ -535,7 +535,7 @@ main#catalogue {
 form#flux_recherche {
 	border-bottom: 1px solid #c1c1c1;
 	margin-left:0;
-	height:35px;
+	height:auto;
 	margin-bottom:50px;
 	display: inline-block;
 }
@@ -576,7 +576,7 @@ form#nav_recherche_flux {
 	display: inline-block;
 	border-bottom: 1px solid #c1c1c1;
 	margin-left:0px;
-	height:35px;
+	height:auto;
 	margin-top:8px;
 }
 
@@ -751,6 +751,7 @@ nav.nav_secondaire_pref {
 	min-width: 700px;
 	padding-left:0;
 	padding-right:0;
+	padding-bottom:0;
 }
 
 .nav_secondaire_pref a {
@@ -812,7 +813,7 @@ nav.nav_secondaire_pref {
 
 form#tag_ajout {
 	margin-left:0;
-	height:35px;
+	height:auto;
 	margin-bottom:0;
 	display: inline-block;
 }

@@ -1,3 +1,5 @@
+
+/* Créer le slider accessible */
 $(".regular").slick({
     dots: true,
     infinite: true,
@@ -8,18 +10,28 @@ $(".regular").slick({
 
 
 
-
-
-
+/* Pour faire en sorte qu'en text-only 200%, les menus ne se superposent pas */
 $(window).on("resize", function () {
-    var navhauteur = $("nav_principal").height();
-$("nav_secondaire").css("top",navhauteur);
+  var navhauteur = $(".nav_principal").height();
+  var nav2hauteur = $(".nav_secondaire").height();
+  var nav3hauteur = $(".nav_secondaire_pref").height();
+  $(".nav_secondaire").css("top",navhauteur);
+  $(".nav_secondaire_pref").css("top",navhauteur);
+  $("main").css("margin-top",navhauteur+nav2hauteur+"px");
 }).resize();
 
 
+setInterval(function(){ 
+  var navhauteur = $(".nav_principal").height();
+  var nav2hauteur = $(".nav_secondaire").height();
+  var nav3hauteur = $(".nav_secondaire_pref").height();
+  $(".nav_secondaire").css("top",navhauteur);
+  $(".nav_secondaire_pref").css("top",navhauteur);
+  $("main").css("margin-top",navhauteur+nav2hauteur+"px");
+ }, 200);
 
 
-
+/* Faire apparaître et disparaitre le champs tout en bas de la page "Mes livres" */
 var ajout_selection=0;
 
 $(".section_titre").click(function(){
@@ -33,7 +45,6 @@ $(".section_titre").click(function(){
         }, 500);
 
 		$("#tag_champs").focus();
-
 	}
 
 	else{
@@ -44,19 +55,9 @@ $(".section_titre").click(function(){
 });
 
 
-$(function() {
-    $( "#draggable_list" ).sortable();
-    $( "#draggable_list" ).disableSelection();
-  });
 
 
-
-$(".load").css("opacity","0");
-setTimeout(function(){ 
-	$(".load").css("display","none");
-}, 2000);
-
-
+/* Rendre bleu la langue sélectionnée dans la page préférences */
 $("#langues_list li").click(function(){
 	$("#langues_list li").removeClass("active");
 	$(this).addClass("active");
@@ -66,10 +67,7 @@ $("#langues_list li").click(function(){
 
 
 
-
-
-
-
+/* La modale qui est un peu partout quand on clique sur "en savoir plus" sur le livre*/
 const triggers = document.querySelectorAll('[aria-haspopup="dialog"]');
 const doc = document.querySelector('.js-document');
 const focusableElementsArray = [
@@ -184,8 +182,7 @@ triggers.forEach((trigger) => {
 
 
 
-/* PAGE MODIFIER THÈME */
-
+/* L'accordéon des options dans la page "modifier thème" */
 $("#lecture_parametres_list li").click(function(){
   var prochainediv = $(this).next();
 
@@ -201,12 +198,10 @@ $("#lecture_parametres_list li").click(function(){
 
 
 
-
+/* Rendre le slider pour la taille du texte accessible dans la page "modifier thème" */
 function outputUpdate(vol) { 
   document.querySelector('#valeur_taille').value = vol;
 }
-
-
 
 $("#taille_texte").on("input change", function() {
     var value = document.getElementById("taille_texte").value;
@@ -214,11 +209,14 @@ $("#taille_texte").on("input change", function() {
 });
 
 
+/* L'input pour la police de caractère dans la page "modifier thème" */
 $("#police_texte").on("change", function(){
   var value = $(this).val();
     $(".fenetre_lecture").css("font-family", value);
 });
 
+
+/* Les boutons justifier texte dans la page "modifier thème" */
 $("#option_gauche").click(function(){
   $(".fenetre_lecture").css("text-align","left");
 });
