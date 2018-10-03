@@ -215,6 +215,12 @@ $("#police_texte").on("change", function(){
     $(".window_read").css("font-family", value);
 });
 
+/* L'input pour la couleur du texte */
+$(".pref_color .circle_color").click(function(){
+  var mycolor = $(this).css("background-color");
+  $(".window_read").css("color", mycolor);
+});
+
 
 /* Les boutons justifier texte dans la page "modifier thème" */
 $("#option_gauche").click(function(){
@@ -223,4 +229,38 @@ $("#option_gauche").click(function(){
 
 $("#option_justif").click(function(){
   $(".window_read").css("text-align","justify");
+});
+
+
+/* Les boutons colonnes dans la page "modifier thème" */
+$("#option_colonne").click(function(){
+  $(".window_read").css("column-count","auto");
+  $(".window_read").css("-webkit-column-count","auto");
+  $(".window_read").css("-moz-column-count","auto");
+});
+
+$("#option_colonne1").click(function(){
+  $(".window_read").css("column-count","1");
+  $(".window_read").css("-webkit-column-count","1");
+  $(".window_read").css("-moz-column-count","1");
+});
+
+$("#option_colonne2").click(function(){
+  $(".window_read").css("column-count","2");
+  $(".window_read").css("-webkit-column-count","2");
+  $(".window_read").css("-moz-column-count","2");
+});
+
+
+
+
+
+
+
+
+
+
+$(".pref_back .circle_color").click(function(){
+  var mycolor = $(this).css("background-color");
+  $(".window_read").css("background-color", mycolor);
 });

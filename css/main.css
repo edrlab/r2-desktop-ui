@@ -961,6 +961,7 @@ input.pref_tag_inputs::placeholder {
 	font-weight: 600;
 }
 
+
 .slider_marker {
 	position: relative;
 	vertical-align: middle;
@@ -970,6 +971,7 @@ input.pref_tag_inputs::placeholder {
 .center_in_tab {
 	position: relative;
 	text-align: center;
+	font-size: 0.8rem;
 }
 
 
@@ -1043,10 +1045,38 @@ input[type=range]::-moz-range-thumb {
     column-gap: 40px;
 }
 
-#scroll_option, #page_option{
-	background-color: red;
-	width:30px;
-	height:30px;
+#scroll_option, #page_option, 
+#option_gauche, #option_justif, 
+#option_colonne, #option_colonne1, #option_colonne2 {
 	display: inline-block;
+	text-align: center;
+	margin-right:10px;
+	margin-left:10px;
+	line-height: 2rem;
+	cursor: pointer;
+	vertical-align: baseline;
+}
+
+.center_in_tab img {
+	position: relative;
+	left:50%;
+	width:40px;
+	display: block;
+	text-align: center;
+	transform: translateX(-50%) translateY(0%);
+	-webkit-transform: translateX(-50%) translateY(0%);
+}
+
+.pref_color {
+	margin-top:20px;
+}
+
+.circle_color {
+	width: 20px;
+	display: inline-block;
+	height:20px;
+	border-radius: 20px;
+	background-color: red;
+	cursor: pointer;
 }
 
