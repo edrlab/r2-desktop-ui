@@ -251,16 +251,83 @@ $("#option_colonne2").click(function(){
   $(".window_read").css("-moz-column-count","2");
 });
 
-
-
-
-
-
-
-
-
-
+/* La couleur de fond dans la page "modifier thème" */
 $(".pref_back .circle_color").click(function(){
   var mycolor = $(this).css("background-color");
   $(".window_read").css("background-color", mycolor);
 });
+
+
+/* Faire apparaître les graduations sur le tracker sur la page lecture */
+var chapters = 0;
+
+$("#more_info_chapters").click(function(){
+  if (chapters===0) {
+    $("#arrow_box").css("display","block");
+    $("#chapters_markers").css("display","flex");
+    document.getElementById("more_info_chapters").innerHTML = "Moins d'informations";
+    chapters=1;
+  }
+  else {
+    $("#arrow_box").css("display","none");
+    $("#chapters_markers").css("display","none");
+    document.getElementById("more_info_chapters").innerHTML = "Plus d'informations";
+    chapters=0;
+  }
+})
+
+
+/* Changements dans les espacements */
+$("#margin_input").on("change", function(){
+  var value = $(this).val();
+  $(".window_read").css("padding", value + "pt");
+});
+
+$("#wordspacing_input").on("change", function(){
+  var value = $(this).val();
+  $(".window_read").css("word-spacing", value + "pt");
+});
+
+$("#letterspacing_input").on("change", function(){
+  var value = $(this).val();
+  $(".window_read").css("letter-spacing", value + "pt");
+});
+
+$("#lineheight_input").on("change", function(){
+  var value = $(this).val();
+  $(".window_read").css("line-height", value + "pt");
+});
+
+
+
+
+
+
+var layout_open = 0;
+
+$("#read_menu_layout").click(function(){
+  
+  if (layout_open===0) {
+    $(".read_settings").css("display","block");
+    $(this).css("background-color","#c1c1c1");
+    layout_open=1;
+  }
+  else {
+    $(".read_settings").css("display","none");
+    $(this).css("background-color","white");
+    layout_open=0;
+  }
+});
+
+var bookmark_added = 0;
+$("#read_menu_bookmark").click(function(){
+  if (bookmark_added===0) {
+    $('#bookmark_icon').attr('src', 'img/outline-bookmark-24px.svg');
+    bookmark_added=1;
+  }
+  else {
+    $('#bookmark_icon').attr('src', 'img/outline-bookmark_border-24px.svg');
+    bookmark_added=0;
+  }
+});
+

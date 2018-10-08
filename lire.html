@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
   </head>
-  <body>
+  <body id="lire">
 
 
 
@@ -36,76 +36,138 @@
       <!-- Menu principal -->
       <nav class="main_navigation" role="navigation" aria-label="Menu principal">
         <ul>
-          <li><a href="index.html">Mes Livres</a></li>
-          <li><a href="catalogues.html">Catalogues</a></li>
-          <li class="preferences active">Préférences</li>
+          <li><a href="index.html"><img src="img/baseline-arrow_back-24px-grey.svg" alt="retour à l'accueil"></a>
+
+          </li><li><a href="#"><img src="img/outline-info-24px.svg" alt="informations du livre"></a>
+
+          </li><li><a href="#"><img src="img/outline-flip_to_front-24px.svg" alt="détacher la fenêtre de lecture"></a>
+
+          </li>
+
+          <li class="right blue"><a href="lire_full.html"><img src="img/sharp-crop_free-24px.svg" alt="rentrer en mode plein écran"></a>
+
+          </li><li class="right" role="link"><img src="img/open_book.svg" alt="Sommaire">
+
+          </li><li class="right" id="read_menu_bookmark" role="link"><img src="img/outline-bookmark_border-24px.svg" alt="Mettre un marque-page" id="bookmark_icon">
+
+          </li><li class="right" id="read_menu_layout" role="link"><img src="img/font-size.svg" alt="Options de mise en page">
+
+          </li><li class="right" role="link"><img src="img/baseline-volume_up-24px.svg" alt="Régler le volume"></li>
+
+
+
         </ul>
+
+          
+ 
       </nav>
 
 
 
 
 
-      <!-- Menu secondaire -->
-      <nav class="nav_secondary_pref" role="navigation" aria-label="Menu secondaire">
-
-        <ul>
-          <li>
-            <a href="preferences.html">Gérer mes tags</a>
-          </li><li class="active">
-            <a href="preferences_2.html">Préférences de lecture <span class="out-of-screen">(rubrique courante)</span></a>
-          </li><li>
-            <a href="preferences_3.html">Langue de l'interface</a>
-          </li>
-        </ul>
-
-      </nav> <!-- fin du menu secondaire -->
-
-
-
 
       <!-- Main content -->
       <main role="main">
-        <a id="contenu" tabindex="-1"></a>
+      
 
+        <section class="window_read">
 
-        <section id="breadcrumb_theme">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
 
-          <div class="breadcrumb">
-            <a href="preferences_2.html" class="breadcrumb_icon">
-              <img src="img/baseline-arrow_back-24px.svg" alt="Retour">
-            </a>Mes thèmes / <span class="breadcrumb_active">Mon thème 1</span>
-          </div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
 
-
-          <!-- Formulaire pour renommer -->
-          <form id="tag_add">
-              
-            <input type="text" class="pref_tag_inputs" placeholder="Mon thème 1" aria-label="Nouveau nom du thème" /> 
-          
-            <input type="checkbox" id="defaut" name="defaut" value="themepardefaut">
-            <label for="defaut">Thème par défaut ?</label>
-
-
-          </form>
 
         </section>
 
+        <img src="img/baseline-arrow_forward_ios-24px.svg" alt="page suivante" id="next_page" role="link">
 
-        <section id="read">
-
-          <div class="window_read">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+        <img src="img/baseline-arrow_left_ios-24px.svg" alt="page précédente" id="previous_page" role="link">
 
 
+        <div id="track_reading" aria-hidden="true">
+          <div id="current"></div>
+
+          <div id="chapters_markers">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
+        </div>
+
+        <span aria-hidden="true" id="more_info_chapters">Plus d'informations</span>
+
+        <div id="arrow_box">
+          <span>Chapitre 5</span>
+          <p>Nom du chapitre 23/453</p>
+        </div>
+
+
+
+        
+
+
           <div class="read_settings">
             <ul id="read_settings_list">
+
+              <li>Thème</li>
+
+                <div class="tab_content">
+                  <div class="line_tab_content">
+                    
+                    <div class="subheading">Thèmes prédéfinis</div>
+
+                    <div class="theme_choices">
+                      <input type="radio" id="theme1" name="theme" value="theme1" checked />
+                      <label for="theme1">Thème 1</label>
+                    </div>
+
+
+                    <div class="theme_choices">
+                      <input type="radio" id="theme2" name="theme" value="theme2" checked />
+                      <label for="theme2">Thème 2</label>
+                    </div>
+
+
+                    <div class="theme_choices">
+                      <input type="radio" id="theme3" name="theme" value="theme3" checked />
+                      <label for="theme3">Thème 3</label>
+                    </div>
+
+                    <div class="separateur"></div>
+
+
+                    <div class="subheading">Mes thèmes</div>
+
+
+                    <div class="theme_choices">
+                      <input type="radio" id="theme4" name="theme" value="theme4" checked />
+                      <label for="theme4">Thème 4</label>
+                    </div>
+
+
+                    <div class="theme_choices">
+                      <input type="radio" id="theme5" name="theme" value="theme5" checked />
+                      <label for="theme5">Thème 5</label>
+                    </div>
+
+                    <div class="separateur"></div>
+
+                    <a class="lire_creertheme" href="preferences_2.html">Créer un thème</a>
+
+
+                  </div>
+                </div>
 
 
               <li>Texte</li>
@@ -277,13 +339,61 @@
 
               <div class="tab_content">
 
+                <div class="line_tab_content">
+                  <div class="subheading">
+                    Marges
+                  </div>
+
+                  <input type="number" placeholder="par défaut" title="Valeur des marges" id="margin_input" step="5" min="30" max="100" value="50"> pt
+                </div>
+
+                <div class="line_tab_content">
+                  <div class="subheading">
+                    Espacement des mots
+                  </div>
+
+                  <input type="number" placeholder="par défaut" title="Valeur de l'espacement des mots" id="wordspacing_input" step="1" min="0" max="50" value="0"> pt
+                </div>
+
+
+                <div class="line_tab_content">
+                  <div class="subheading">
+                    Espacement des lettres
+                  </div>
+
+                  <input type="number" placeholder="par défaut" title="Valeur de l'espacement des lettres" id="letterspacing_input" step="0.5" min="0" max="8" value="0"> pt
+                </div>
+
+
+                <div class="line_tab_content">
+                  <div class="subheading">
+                    Espacement des lignes
+                  </div>
+
+                  <input type="number" placeholder="par défaut" title="Valeur de l'espacement des lignes" id="lineheight_input" step="1" min="15" max="40" value="18"> pt
+                </div>
+
+
               </div>
 
 
               <li>Accessibilité</li>
 
               <div class="tab_content">
+                <div class="line_tab_content">
+                  <div class="subheading">Disposition</div>
 
+                  <div class="center_in_tab">
+                    <div id="page_option" role="link">
+                      <img src="img/pagine.svg" alt="">
+                      Sans
+                    </div>
+                    <div id="page_option" role="link">
+                      <img src="img/pagine.svg" alt="">
+                      Avec
+                    </div>
+                  </div>
+                </div>
               </div>
 
             </ul>
@@ -294,7 +404,6 @@
 
 
 
-        </section>
           
 
 
