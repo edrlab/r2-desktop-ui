@@ -1420,6 +1420,48 @@ p.chapters_description {
 	font-weight: 500;
 }
 
-.line.active {
+#chapter_settings_list .line.active {
 	color:black;
+}
+
+#chapter_settings_list .bookmarks_line {
+	width:calc(100% - 40px);
+	margin-left:20px;
+	position: relative;
+	text-align: left;
+	padding:20px 0 20px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+#chapter_settings_list .bookmarks_line:last-child {
+	border-bottom: 0;
+}
+
+#chapter_settings_list .bookmarks_line img {
+	width:30px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.bookmarks_line .chapter_marker {
+	vertical-align: top;
+	position: relative;
+	display: inline-block;
+	width:auto;
+	height:auto;
+	font-size: 0.8rem;
+}
+
+.chapter_marker .gauge {
+	width:100%;
+	margin-top:2px;
+	height:4px;
+	background-color: #ECECEC;
+}
+
+.chapter_marker .gauge .fill {
+	height:100%;
+	position: relative;
+	width:50%;
+	background-color: #3B3B3B;
 }
