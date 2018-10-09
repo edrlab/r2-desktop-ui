@@ -1297,3 +1297,129 @@ input[type=number] {
 	background-color: white;
 	border:1px solid #c1c1c1;
 }
+
+
+
+.chapters_settings { 
+	width: 40%;
+	border-left: 1px solid #e5e5e5;
+	position: fixed;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch; 
+	top:60px;
+	right:0;
+	height: calc(100vh - 60px);
+	background-color: white;
+	z-index:100;
+}
+
+#chapter_settings_list li {
+	padding:20px 20px 20px 20px;
+	border-bottom: 1px solid #e5e5e5;
+	font-size: 0.9rem;
+	font-weight: 600;
+	background-color: white;
+	cursor: pointer;
+}
+
+form#insidebook_search {
+	display: inline-block;
+	border-bottom: 1px solid #c1c1c1;
+	height:auto;
+	margin-top:10px;
+	width:70%;
+	margin-left:15%;
+}
+
+
+input#book_search {
+	position: relative;
+	border-radius: 0;
+	border:none;
+	height:35px;
+	outline: inherit;
+	color:black;
+	font-size: 0.9rem;
+	width:calc(100% - 35px);
+}
+
+input#book_search::placeholder {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color:#c1c1c1;
+	width:100%;
+	overflow: visible;
+}
+
+#lire .line_tab_content {
+	padding:0;
+}
+
+
+#insidebook_search #launch{
+	position: relative;
+	width:35px;
+	float:right;
+	vertical-align: top;
+}
+
+.go_to_page {
+	display: inline-block;
+	position: relative;
+	left:15%;
+	width:70%;
+	font-size: 0.9rem;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.go_to_page input[type=number] {
+	background-color: transparent;
+	border:none;
+	border-bottom: 1px solid #c1c1c1;
+	border-radius: 0;
+	width:50px;
+	padding:10px;
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+.go_to_page input[type=number]::placeholder {
+	overflow: visible;
+	color:#c1c1c1;
+}
+
+.chapters_content {
+	position: relative;
+	background-color: transparent;
+	width:100%;
+	padding:0 20px 0 20px;
+	height:auto;
+}
+
+#chapter_settings_list .subheading {
+	background-color: #EDEDED;
+	padding:20px;
+}
+
+.chapters_content .line {
+	text-align: left;
+	font-size: 0.8rem;
+	padding-top:10px;
+	font-weight: bold;
+	color:#c1c1c1;
+	padding-bottom:20px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.chapters_content .line:last-child {
+	border-bottom: 0;
+}
+
+p.chapters_description {
+	font-weight: 500;
+}
+
+.line.active {
+	color:black;
+}

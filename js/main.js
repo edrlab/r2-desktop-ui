@@ -331,3 +331,17 @@ $("#read_menu_bookmark").click(function(){
   }
 });
 
+
+/* L'accordéon des options dans la page "lecture" */
+$("#chapter_settings_list li").click(function(){
+  var prochainediv = $(this).next();
+
+  if ( prochainediv.css('display') == 'none') {
+    prochainediv.slideDown();
+  }
+
+  else {
+    prochainediv.slideUp();
+  }
+
+});
