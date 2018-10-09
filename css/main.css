@@ -1473,3 +1473,59 @@ p.chapters_description {
 	vertical-align: top;
 	margin-top:5px;
 }
+
+
+
+/* Full screen read mode */
+
+
+#read_full nav.main_navigation {
+	padding:0;
+	background-color: transparent;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+#read_full nav.main_navigation a {
+	padding:0;
+}
+
+#read_full nav.main_navigation ul {
+	padding:0;
+	line-height: 0.9rem;
+}
+
+#read_full nav.main_navigation ul li img {
+	position: relative;
+	width:30px;
+	padding:0;
+	left:50%;
+	margin-left:-15px;
+	height:30px;
+}
+
+
+#read_full nav.main_navigation ul li {
+	display: inline-block;
+	padding-bottom:15px;
+	padding-top:15px;
+	height:100%;
+	width:60px;
+	font-weight: 600;
+	color:#c1c1c1;
+	border-right:1px solid #c1c1c1;
+}
+
+#read_full nav.main_navigation li.right {
+	float:right;
+	border-left:1px solid #c1c1c1;
+	border-bottom:1px solid #c1c1c1;
+	border-right:none;
+	background-color: #FBFBFB;
+}
+
+#read_full .window_read {
+	width:100%;
+	background-color: transparent;
+}
