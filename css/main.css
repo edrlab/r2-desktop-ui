@@ -1352,7 +1352,7 @@ input#book_search::placeholder {
 	overflow: visible;
 }
 
-#lire .line_tab_content {
+#chapters_settings .line_tab_content {
 	padding:0;
 }
 
@@ -1431,6 +1431,7 @@ p.chapters_description {
 	position: relative;
 	text-align: left;
 	padding:20px 0 20px 0;
+	font-size: 0.9rem;
 	border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1465,4 +1466,10 @@ p.chapters_description {
 	position: relative;
 	width:50%;
 	background-color: #3B3B3B;
+}
+
+.bookmarks_line span {
+	display: inline-block;
+	vertical-align: top;
+	margin-top:5px;
 }

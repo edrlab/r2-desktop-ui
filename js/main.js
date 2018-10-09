@@ -303,19 +303,42 @@ $("#lineheight_input").on("change", function(){
 
 
 
+function closelayout(){
+  $(".read_settings").css("display","none");
+  $("#read_menu_layout").css("background-color","white");
+  layout_open=0;
+}
+
+function openlayout(){
+  $(".read_settings").css("display","block");
+  $("#read_menu_layout").css("background-color","#c1c1c1");
+  layout_open=1;
+}
+
+function openchapters(){
+  $(".chapters_settings").css("display","block");
+  $("#read_menu_chapters").css("background-color","#c1c1c1");
+  chapters_open=1;
+}
+
+function closechapters(){
+  $(".chapters_settings").css("display","none");
+  $("#read_menu_chapters").css("background-color","white");
+  chapters_open=0;
+}
+
+
+
 var layout_open = 0;
 
 $("#read_menu_layout").click(function(){
   
   if (layout_open===0) {
-    $(".read_settings").css("display","block");
-    $(this).css("background-color","#c1c1c1");
-    layout_open=1;
+    closechapters();
+    openlayout();
   }
   else {
-    $(".read_settings").css("display","none");
-    $(this).css("background-color","white");
-    layout_open=0;
+    closelayout();
   }
 });
 
@@ -325,14 +348,11 @@ var chapters_open = 0;
 $("#read_menu_chapters").click(function(){
   
   if (chapters_open===0) {
-    $(".chapters_settings").css("display","block");
-    $(this).css("background-color","#c1c1c1");
-    chapters_open=1;
+    closelayout();
+    openchapters();
   }
   else {
-    $(".chapters_settings").css("display","none");
-    $(this).css("background-color","white");
-    chapters_open=0;
+    closechapters();
   }
 });
 
