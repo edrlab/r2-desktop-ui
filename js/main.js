@@ -319,6 +319,29 @@ $("#read_menu_layout").click(function(){
   }
 });
 
+
+var chapters_open = 0;
+
+$("#read_menu_chapters").click(function(){
+  
+  if (chapters_open===0) {
+    $(".chapters_settings").css("display","block");
+    $(this).css("background-color","#c1c1c1");
+    chapters_open=1;
+  }
+  else {
+    $(".chapters_settings").css("display","none");
+    $(this).css("background-color","white");
+    chapters_open=0;
+  }
+});
+
+
+
+
+
+
+
 var bookmark_added = 0;
 $("#read_menu_bookmark").click(function(){
   if (bookmark_added===0) {

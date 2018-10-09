@@ -1301,6 +1301,7 @@ input[type=number] {
 
 
 .chapters_settings { 
+	display: none;
 	width: 40%;
 	border-left: 1px solid #e5e5e5;
 	position: fixed;
