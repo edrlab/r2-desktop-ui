@@ -1,15 +1,3 @@
-
-/* Créer le slider accessible */
-$(".regular").slick({
-    dots: true,
-    infinite: true,
-    slidesToShow: 6,
-    slidesToScroll: 6,
-    accessibility:true
-});
-
-
-
 /* Pour faire en sorte qu'en text-only 200%, les menus ne se superposent pas */
 $(window).on("resize", function () {
   var navhauteur = $(".main_navigation").height();
@@ -388,3 +376,4 @@ $("#chapter_settings_list li").click(function(){
   }
 
 });
+

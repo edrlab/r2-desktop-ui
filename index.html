@@ -660,4 +660,16 @@
   <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+
+  <script type="text/javascript">
+
+    /* Créer le slider accessible */
+    $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        accessibility:true
+    });
+  </script>
 </html>
