@@ -1138,6 +1138,14 @@ input[type=range]::-moz-range-thumb {
 	background-color: #2B5366;
 }
 
+#lire nav.main_navigation button {
+	position: relative;
+	width:35px;
+	left:2px;
+	height:30px;
+	text-align: center;
+}
+
 #lire section.window_read {
 	position: relative;
 	width:100%;
