@@ -48,6 +48,31 @@ li {
 
 
 
+.lightgrey {
+	color:#787878;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 0.9rem;
+	font-weight: 300;
+	color:#787878;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 0.9rem;
+	font-weight: 300;
+	color:#787878;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    font-size: 0.9rem;
+	font-weight: 300;
+	color:#787878;
+}
+
+
+
 
 /* BARRE DE NAV PRINCIPALE */
 
@@ -82,7 +107,6 @@ nav.main_navigation ul li {
 	padding-bottom:18px;
 	padding-top:18px;
 	font-weight: 600;
-	color:#c1c1c1;
 	cursor: pointer;
 }
 
@@ -153,11 +177,6 @@ input#menu_search {
 	font-size: 0.9rem;
 }
 
-input#menu_search::placeholder {
-	font-size: 0.9rem;
-	font-weight: 300;
-	color:#c1c1c1;
-}
 	
 #nav_search #launch{
 	position: relative;
@@ -212,7 +231,6 @@ h1 {
 	width: calc(100% - 40px);
 	font-size: 0.7rem;
 	font-weight: 300;
-	color:#c1c1c1;
 }
 
 .icon_seemore {
@@ -278,16 +296,10 @@ input#tag_inputs {
 	font-size: 0.9rem;
 }
 
-input#tag_inputs::placeholder {
-	font-size: 0.9rem;
-	font-weight: 300;
-	color:#c1c1c1;
-}
 	
 #tag_search #launch{
 	position: relative;
 	width:35px;
-	color: #c1c1c1;
 	vertical-align: top;
 }
 
@@ -597,12 +609,7 @@ input#menu_search {
 	font-size: 0.9rem;
 }
 
-input#menu_search::placeholder {
-	font-size: 0.9rem;
-	font-weight: 300;
-	color:#c1c1c1;
-}
-	
+
 #nav_search_flux #launch{
 	position: relative;
 	width:35px;
@@ -655,7 +662,6 @@ section#flux_list {
 }
 
 #flux_list span.flux_subtitle {
-	color:grey;
 	font-size: 0.8rem;
 	margin-left:10px;
 }
@@ -837,18 +843,11 @@ input.pref_tag_inputs {
 	margin-right:30px;
 }
 
-input.pref_tag_inputs::placeholder {
-	font-size: 0.9rem;
-	font-weight: 300;
-	color:#c1c1c1;
-}
-
 	
 #tag_add img{
 	position: absolute;
 	width:35px;
 	left:320px;
-	color: #c1c1c1;
 	vertical-align: top;
 }
 
@@ -1357,9 +1356,6 @@ input#book_search {
 }
 
 input#book_search::placeholder {
-	font-size: 0.9rem;
-	font-weight: 300;
-	color:#c1c1c1;
 	width:100%;
 	overflow: visible;
 }
