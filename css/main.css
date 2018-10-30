@@ -1556,7 +1556,7 @@ p.chapters_description {
 
 }
 
-.bar_bottom #previous_page, #next_page {
+.bar_bottom #previous_page, .bar_bottom #next_page {
 	width:35px;
 	height:35px;
 	margin-top:10px;
@@ -1566,7 +1566,7 @@ p.chapters_description {
 .bar_bottom #track_reading {
 	position: relative;
 	top:0;
-	width:80%;
+	width:85%;
 	left:5%;
 	height:8px;
 	margin-top:-30px;
