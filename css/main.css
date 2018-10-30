@@ -14,7 +14,7 @@ a {
 
 button:focus {
 	outline: 1px dotted #212121;
-  outline: 5px auto -webkit-focus-ring-color;
+  	outline: 5px auto -webkit-focus-ring-color;
 }
 
 a.avoidance {
@@ -235,10 +235,10 @@ h1 {
 
 .icon_seemore {
 	position: absolute;
-	top:10px;
+	top:0;
 	right:0;
 	width:20px;
-	height:40px;
+	height:30px;
 }
 
 .see_more {
@@ -306,6 +306,11 @@ input#tag_inputs {
 .block_book button {
 	cursor: pointer;
 	z-index:100;
+	position: absolute;
+    top: 10px;
+    right: 0;
+    width: 20px;
+    height: 30px;
 }
 
 
@@ -1540,7 +1545,6 @@ p.chapters_description {
 
 
 *:focus {
-	outline: 1px dotted #212121;
-  outline: 5px auto -webkit-focus-ring-color;
-
+	outline: 1px dotted #212121 !important;
+  	outline: 5px auto -webkit-focus-ring-color !important;
 }
