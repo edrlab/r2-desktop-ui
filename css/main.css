@@ -1543,6 +1543,10 @@ p.chapters_description {
 	background-color: transparent;
 }
 
+
+
+/* TEST */
+
 .bar_bottom {
 	position: fixed;
 	bottom:0;
@@ -1563,10 +1567,14 @@ p.chapters_description {
 	float:right;
 }
 
+.bar_bottom #next_page {
+	margin-right:50px;
+}
+
 .bar_bottom #track_reading {
 	position: relative;
 	top:0;
-	width:85%;
+	width:80%;
 	left:5%;
 	height:8px;
 	margin-top:-30px;
@@ -1578,6 +1586,67 @@ p.chapters_description {
 	position: relative;
 	left:5%;
 	top:0;
+}
+
+#read_full_test .window_read {
+	column-count: 1;
+	-webkit-column-count: 1;
+	-moz-column-count: 1;
+}
+
+
+/* Full screen read mode */
+
+
+#read_full_test nav.main_navigation {
+	padding:0;
+	background-color: transparent;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+#read_full_test nav.main_navigation a {
+	padding:0;
+}
+
+#read_full_test nav.main_navigation ul {
+	padding:0;
+	line-height: 0.9rem;
+}
+
+#read_full_test nav.main_navigation ul li img {
+	position: relative;
+	width:30px;
+	padding:0;
+	left:50%;
+	margin-left:-15px;
+	height:30px;
+}
+
+
+#read_full_test nav.main_navigation ul li {
+	display: inline-block;
+	padding-bottom:15px;
+	padding-top:15px;
+	height:100%;
+	width:60px;
+	font-weight: 600;
+	color:#c1c1c1;
+	border-right:1px solid #c1c1c1;
+}
+
+#read_full_test nav.main_navigation li.right {
+	float:right;
+	border-left:1px solid #c1c1c1;
+	border-bottom:1px solid #c1c1c1;
+	border-right:none;
+	background-color: #FBFBFB;
+}
+
+#read_full_test .window_read {
+	width:100%;
+	background-color: transparent;
 }
 
 
