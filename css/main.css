@@ -184,6 +184,12 @@ input#menu_search {
 	vertical-align: top;
 }
 
+#nav_search .launch{
+	position: relative;
+	width:35px;
+	vertical-align: top;
+}
+
 
 
 /* PAGE "MES LIVRES" EN GRILLE	*/
@@ -298,6 +304,12 @@ input#tag_inputs {
 
 	
 #tag_search #launch{
+	position: relative;
+	width:35px;
+	vertical-align: top;
+}
+
+#tag_search .launch{
 	position: relative;
 	width:35px;
 	vertical-align: top;
