@@ -302,6 +302,18 @@ input#tag_inputs {
 	font-size: 0.9rem;
 }
 
+input.tag_inputs {
+	position: relative;
+	width:300px;
+	border-radius: 0;
+	border:none;
+	height:35px;
+	outline: inherit;
+	background-color: transparent;
+	color:black;
+	font-size: 0.9rem;
+}
+
 	
 #tag_search #launch{
 	position: relative;
